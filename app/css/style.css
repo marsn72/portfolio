@@ -1,8 +1,18 @@
-.header{
-    color: darkgray;
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
-.text{
-    font-size: 2em;
-    font-style: italic;
-    color:  darkgreen;
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
 }
