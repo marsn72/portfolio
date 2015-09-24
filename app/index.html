@@ -2,47 +2,183 @@
 <html lang="ru-RU">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Портфолио</title>
+    <!--SEO-->
+    <meta name="description" content="site portfolio">
+    <meta name="keywords" content="site portfolio">
+    <meta name="author" content="Maraev Sergey">
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--vendor CSS-->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <!--fonts CSS-->
+    <link rel="stylesheet" href="fonts/fira/fira.css">
+    <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <!--header JS-->
+    <!-- <script src="../node_modules/modernizr/bin/modernizr"></script>-->
 </head>
 <body>
+<!--[if lte IE 7]>
+<p class="browsehappy">Вы используете<strong>устаревший</strong>браузер.Пожалуйста<a href="http://browsehappy.com">обновите</a>его
+</p>
+<![endif]-->
 <div class="wrapper clearfix">
 
     <div class="main-content">
 
-        <header class="header">
-            <div class="logo">
-
-            </div>
-            <div class="social">
-
+        <header class="page-header">
+            <div class="container-big">
+                <a href="#" class="header-logo-link">
+                    <img src="images/logo.png" alt="logo">
+                    <span class="header-logo-text">Сайт портфолио</span>
+                </a>
+                <ul class="social">
+                    <li class="social-item"><a href="http://vk.com/maraev_s" target="_blank" class="social-link vk">http://vk.com/maraev_s</a>
+                    </li>
+                    <li class="social-item"><a href="http://twitter.com/" target="_blank" class="social-link tw">http://twitter.com</a>
+                    </li>
+                    <li class="social-item"><a href="http://facebook.com/" target="_blank" class="social-link fb">http://facebook.com</a>
+                    </li>
+                    <li class="social-item"><a href="http://github.com/marsn72" target="_blank" class="social-link gt">http://github.com/marsn72</a>
+                    </li>
+                </ul>
             </div>
         </header>
 
-        <div class="menu">
-            <div class="about">
+        <div class="container">
+            <!--Левая колонка-->
+            <aside class="sidebar">
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-item current"><a href="#" class="navigation-link">Обо мне</a></li>
+                        <li class="navigation-item"><a href="#" class="navigation-link">Мои работы</a></li>
+                        <li class="navigation-item"><a href="#" class="navigation-link">Связаться со мной</a></li>
+                    </ul>
+                </nav>
+                <adress class="contacts">
+                    <div class="contacts-header">
+                        <span class="header-inner-text">Контакты</span>
+                        <ul class="contacts-list">
+                            <li class="contacts-item contacts-item-mail"><a href="mailto:my_new_pochta@bk.ru"
+                                                                            class="contacts-link"><span
+                                    class="contacts-text">my_new_pochta@bk.ru</span></a></li>
+                            <li class="contacts-item contacts-item-phone"><a href="tel:+79991232323"
+                                                                             class="contacts-link"><span
+                                    class="contacts-text">+79991232323</span></a></li>
+                            <li class="contacts-item contacts-item-skype"><a href="skype:marsn_72"
+                                                                             class="contacts-link"><span
+                                    class="contacts-text">marsn_72</span></a></li>
+                        </ul>
+                    </div>
+                </adress>
+            </aside>
+            <!--Правая колонка-->
+            <div class="variable-content">
+                <section class="aboutbox">
+                    <h2 class="aboutbox-header">Основная информация</h2>
 
-            </div>
-            <div class="contact">
+                    <div class="aboutbox-body clearfix">
+                        <div class="image-wrap">
+                            <div class="avatar-box"><img src="images/face.png" alt="Мараев Сергей" class="avatar"></div>
+                        </div>
+                        <div class="worksheet-wrap">
+                            <ul class="worksheet-list">
+                                <li class="worksheet-item clearfix">
+                                    <div class="worksheet-what">Меня зовут</div>
+                                    <div class="worksheet-info">Мараев Сергей</div>
+                                </li>
+                                <li class="worksheet-item clearfix">
+                                    <div class="worksheet-what">Мой возраст</div>
+                                    <div class="worksheet-info">43 года</div>
+                                </li>
+                                <li class="worksheet-item clearfix">
+                                    <div class="worksheet-what">Мой город</div>
+                                    <div class="worksheet-info">Нижний Новгород, Россия</div>
+                                </li>
+                                <li class="worksheet-item clearfix">
+                                    <div class="worksheet-what">Моя специализация</div>
+                                    <div class="worksheet-info">WEB разработчик</div>
+                                </li>
+                                <div class="worksheet-item clearfix">
+                                    <div class="worksheet-what">Ключевые навыки</div>
+                                    <div class="worksheet-info skills">
+                                        <ul class="skills-list">
+                                            <li class="skills-item">html</li>
+                                            <li class="skills-item">css</li>
+                                            <li class="skills-item">javascript</li>
+                                            <li class="skills-item">gulp</li>
+                                            <li class="skills-item">git</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
+
+                <section class="aboutbox">
+
+                    <h2 class="aboutbox-header">Опыт работы</h2>
+
+                    <div class="aboutbox-body clearfix">
+
+                        <ul class="aboutbox-list">
+                            <li class="aboutbox-item icon-work">
+                                <div class="where">ТПО "ДМС" - начальник отдела внедрения ИС</div>
+                                <div class="period">Август 2002 - Октябрь 2009</div>
+                            </li>
+                            <li class="aboutbox-item icon-work">
+                                <div class="where">ОАО "Вымпелком" - Монтажник линий связи</div>
+                                <div class="period">Октябрь 2009 - Июнь 2015</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+
+
+                <section class="aboutbox">
+
+                    <h2 class="aboutbox-header">Образование</h2>
+
+                    <div class="aboutbox-body clearfix">
+
+                        <ul class="aboutbox-list">
+                            <li class="aboutbox-item icon-college">
+                                <div class="where">Высшее. НФГИ</div>
+                                <div class="period">Август 2010 - Июнь 2015</div>
+                            </li>
+                            <li class="aboutbox-item icon-course">
+                                <div class="where">Курсы Loftschool.ru</div>
+                                <div class="period"> Сентябрь 2015 - по настоящее время</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
             </div>
         </div>
 
-        <div class="mysites">
-            <div class=""></div><div class=""></div><div class=""></div><div class=""></div><div class=""></div><div class=""></div>
-        </div>
     </div>
 </div>
+
 <footer class="page-footer">
-    <div class="lock">
-
-    </div>
-    <div class="copyright">
-
+    <div class="container">
+        <div class="lock">
+            <a href="/login.html" class="lock-inner">Войти</a>
+        </div>
+        <div class="copyright">
+            © 2015  Это сайт Мараева Сергея, пожалуйста не копируйте и не воруйте его.
+        </div>
     </div>
 </footer>
+<!--vendor JS-->
 <script src="bower/jquery/dist/jquery.js"></script>
+<!--JS-->
 <script src="js/script.js"></script>
 </body>
 </html>
