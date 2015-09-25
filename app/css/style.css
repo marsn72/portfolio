@@ -4,7 +4,6 @@
     border: 1px solid #000;
 }*/
 
-
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -23,3 +22,26 @@
 .clearfix {
     *zoom: 1;
 }
+
+body {
+    background: #fff url(../images/bg.jpg) 0 0 no-repeat;
+}
+.container-big{
+    background: #fff url(../images/bg-header.png) 0 0 repeat;
+    border: 1px solid #000;
+}
+
+.avatar {
+    width: 100%;
+}
+
+.avatar-box {
+    width: 142px;
+    height: 142px;
+    -webkit-border-radius: 50% 50%;
+    -moz-border-radius: 50% 50%;
+    border-radius: 50% 50%;
+    border: 5px solid #3ba8c0;
+    overflow: hidden;
+}
+
