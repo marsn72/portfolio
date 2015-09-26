@@ -1,9 +1,34 @@
-/**{
-    margin: 50px;
-    height: 5px;
-    border: 1px solid #000;
-}*/
+html {
+    height: 100%;
+}
 
+body {
+    height: 100%;
+    background: #fff url(../images/bg.jpg) 0 0 no-repeat;
+    font: normal 1em fira_sans, sans;
+    color: #4a545d;
+}
+
+/*общие классы*/
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+/*clearfix*/
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -23,12 +48,283 @@
     *zoom: 1;
 }
 
-body {
-    background: #fff url(../images/bg.jpg) 0 0 no-repeat;
+/*end clearfix*/
+/*шапка*/
+.container-big {
+    max-width: 1200px;
+    min-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
 }
-.container-big{
+
+.page-header {
+    position: relative;
+    margin-bottom: 39px;
+    height: 119px;
     background: #fff url(../images/bg-header.png) 0 0 repeat;
-    border: 1px solid #000;
+}
+
+.page-header:after {
+    content: '';
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.039);
+    display: block;
+    height: 7px;
+}
+
+.page-header .header-logo-link {
+    position: absolute;
+    top: 39px;
+    left: 0;
+}
+
+.page-header .header-logo-text {
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.page-header .social {
+    position: absolute;
+    right: 0;
+    top: 36px;
+}
+
+/*конец шапки*/
+
+/*блок социальных иконок*/
+
+.social {
+    margin: 0;
+    padding: 0;
+    min-width: 260px;
+}
+
+.social .social-item {
+    list-style: none;
+    display: inline-block;
+    width: 38px;
+    height: 40px;
+    margin-left: 19px;
+}
+
+.social .social-item:first-child {
+    margin-left: 0;
+}
+
+.social .social-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+.sprite {
+    background-image: url(../images/iconsheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-fb {
+    width: 38px;
+    height: 40px;
+    background-position: -10px -10px;
+}
+
+.sprite-fb:hover {
+    width: 38px;
+    height: 40px;
+    background-position: -68px -10px;
+}
+
+.sprite-gt {
+    width: 38px;
+    height: 40px;
+    background-position: -10px -70px;
+}
+
+.sprite-gt:hover {
+    width: 38px;
+    height: 40px;
+    background-position: -68px -70px;
+}
+
+.sprite-tw {
+    width: 38px;
+    height: 40px;
+    background-position: -126px -10px;
+}
+
+.sprite-tw:hover {
+    width: 38px;
+    height: 40px;
+    background-position: -126px -70px;
+}
+
+.sprite-vk {
+    width: 38px;
+    height: 40px;
+    background-position: -10px -130px;
+}
+
+.sprite-vk:hover {
+    width: 38px;
+    height: 40px;
+    background-position: -68px -130px;
+}
+
+/*конец блока социальных иконок*/
+
+/*левое меню*/
+
+.sidebar {
+    float: left;
+    width: 250px;
+}
+
+.navigation {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 26px;
+    background: #f1efee;
+    overflow: hidden;
+}
+
+.navigation .navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation .navigation-item {
+    border-top: 1px solid #c5c5c5;
+    margin: 0 11px;
+}
+
+.navigation .navigation-item:hover {
+    background-image: -moz-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
+    box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
+}
+
+.navigation .navigation-item:first-child {
+    border-top: 0;
+}
+
+.navigation .navigation-item.current {
+    background-image: -moz-linear-gradient(90deg, rgb(62, 183, 153) 0%, rgb(126, 232, 206) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(62, 183, 153) 0%, rgb(126, 232, 206) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(62, 183, 153) 0%, rgb(126, 232, 206) 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.063), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
+    margin: 0;
+    border-bottom: none;
+    padding-left: 11px;
+    margin-bottom: -1px;
+}
+
+.navigation .navigation-item.current .navigation-link {
+    color: #1e7465;
+    font-size: 20px;
+}
+
+.navigation .navigation-link {
+    font-family: open_sansextrabold sans-serif;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #727070;
+    margin-left: 16px;
+    padding: 16px 0;
+}
+
+.navigation .navigation-link:hover {
+    color: #727070;
+}
+
+/*вторая часть левой колонки*/
+
+.contacts {
+    float: left;
+}
+
+.contacts-header {
+
+    box-shadow: inset rgba(252, 255, 255, .7) 0 0.5px 3px;
+    color: #c99332;
+    text-shadow: 0 0.5px 2px #fff;
+    font-family: open_sans_semibold;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 26px;
+    width: 250px;
+    height: 43px;
+    background: rgb(244, 204, 126); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(244, 204, 126, 1) 0%, rgba(233, 192, 111, 1) 50%, rgba(222, 180, 97, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(244, 204, 126, 1)), color-stop(50%, rgba(233, 192, 111, 1)), color-stop(100%, rgba(222, 180, 97, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(244, 204, 126, 1) 0%, rgba(233, 192, 111, 1) 50%, rgba(222, 180, 97, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(244, 204, 126, 1) 0%, rgba(233, 192, 111, 1) 50%, rgba(222, 180, 97, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(244, 204, 126, 1) 0%, rgba(233, 192, 111, 1) 50%, rgba(222, 180, 97, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(244, 204, 126, 1) 0%, rgba(233, 192, 111, 1) 50%, rgba(222, 180, 97, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4cc7e', endColorstr='#deb461', GradientType=0); /* IE6-9 */
+}
+
+.contacts .contacts-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts .contacts-link {
+    display: block;
+    text-decoration: none;
+    padding: 6px 0 6px 82px;
+}
+
+.contacts .contacts-text {
+    line-height: 1.3em;
+    font-size: 14px;
+    color: #979493;
+}
+
+.contacts .contacts-item {
+    background: url("../images/email.png") no-repeat;
+}
+
+/*конец левой колонки*/
+
+/*блок информации*/
+.variable-content {
+    float: right;
+    width: 650px;
+}
+
+.aboutbox {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f7f6+0,f0eeed+100 */
+    background: rgb(248,247,246); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZjdmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMGVlZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(248,247,246,1) 0%, rgba(240,238,237,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,247,246,1)), color-stop(100%,rgba(240,238,237,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(248,247,246,1) 0%,rgba(240,238,237,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(248,247,246,1) 0%,rgba(240,238,237,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(248,247,246,1) 0%,rgba(240,238,237,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(248,247,246,1) 0%,rgba(240,238,237,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f7f6', endColorstr='#f0eeed',GradientType=0 ); /* IE6-8 */
+    box-shadow: 2.5px 4.33px 10px 0px rgba(236, 232, 227, 0.294), inset 3px 5.196px 6px 0px rgba(255, 255, 255, 0.392);
+    margin-bottom: 37px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.image-wrap {
+    float: left;
+    margin-left: 55px;
+    margin-top: 18px;
 }
 
 .avatar {
@@ -45,3 +341,180 @@ body {
     overflow: hidden;
 }
 
+.aboutbox-header {
+    margin-top: 0;
+    padding: 21px 43px;
+    background-image: -moz-linear-gradient(90deg, rgb(123, 120, 120) 0%, rgb(169, 168, 168) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(123, 120, 120) 0%, rgb(169, 168, 168) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(123, 120, 120) 0%, rgb(169, 168, 168) 100%);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
+}
+
+.aboutbox .worksheet-wrap {
+    float: right;
+    width: 400px;
+}
+
+.worksheet-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.worksheet-info {
+    float: left;
+    margin-left: 25px;
+    max-width: 218px;
+    overflow: hidden;
+}
+
+.worksheet-item {
+    margin-bottom: 8px;
+}
+
+.worksheet-what {
+    float: left;
+    font-family: open_sansbold;
+    font-size: 16px;
+}
+
+.skills-list {
+    padding-left: 5px;
+}
+
+.skills-list .skills-item {
+    font-family: open_sansbold;
+    display: inline-block;
+    list-style: none;
+}
+
+.skil-sprite {
+    background-image: url(../images/skillsheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-angular {
+    width: 67px;
+    height: 21px;
+    background-position: -10px -10px;
+}
+
+.sprite-css {
+    width: 39px;
+    height: 21px;
+    background-position: -97px -10px;
+}
+
+.sprite-git {
+    width: 38px;
+    height: 21px;
+    background-position: -10px -51px;
+}
+
+.sprite-gulp {
+    width: 47px;
+    height: 21px;
+    background-position: -68px -51px;
+}
+
+.sprite-html {
+    width: 48px;
+    height: 21px;
+    background-position: -10px -92px;
+}
+
+.sprite-javascript {
+    width: 76px;
+    height: 21px;
+    background-position: -156px -10px;
+}
+
+.sprite-php {
+    width: 41px;
+    height: 21px;
+    background-position: -135px -51px;
+}
+
+.sprite-xml {
+    width: 42px;
+    height: 21px;
+    background-position: -196px -51px;
+}
+
+/*футер прибиваем к низу*/
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    min-width: 970px;
+    height: auto !important;
+}
+
+.wrapper:after {
+    content: '';
+    height: 80px;
+    display: block;
+}
+
+.page-footer {
+    height: 80px;
+    margin-top: -80px;
+}
+
+/*конец прибивки футера*/
+/*футер*/
+.page-footer {
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&amp;0.06+0,0.06+100 */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjA2Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wNiIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.06) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.06)), color-stop(100%, rgba(0, 0, 0, 0.06))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.06) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.06) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.06) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.06) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0fffffff', endColorstr='#0f000000', GradientType=0); /* IE6-8 */
+
+    font-family: open_sansbold;
+    color: #4a545d;
+}
+
+.page-footer .container {
+    padding-top: 23px;
+    position: relative;
+}
+
+.page-footer .copyright {
+    margin: 0 180px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*логин*/
+.page-footer .lock {
+    position: absolute;
+    top: 26px;
+    left: 20px;
+}
+
+.lock .lock-inner {
+    display: block;
+    padding-left: 24px;
+    height: 40px;
+    line-height: 2.2em;
+    background: url("../images/locked.png") no-repeat;
+    font-family: open_sansextrabold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4a545d;
+}
+
+.lock .lock-inner:hover {
+    background: url("../images/unlocked.png") no-repeat;
+}
+
+/*логин конец*/
+/*футер конец*/
