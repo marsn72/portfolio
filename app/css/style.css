@@ -292,12 +292,6 @@ body {
     -webkit-box-shadow: inset 0 2px 3px 0px rgba(255, 255, 255, 0.4);
     -moz-box-shadow: inset 0 2px 3px 0px rgba(255, 255, 255, 0.4);
     box-shadow: inset 0 2px 3px 0px rgba(255, 255, 255, 0.4);
-    background: #fbfafa; /*background для іе*/
-    background: -webkit-linear-gradient(#fff, #f5f4f4);
-    background: -o-linear-gradient(#fff, #f5f4f4);
-    background: -ms-linear-gradient(#fff, #f5f4f4);
-    background: -moz-linear-gradient(#fff, #f5f4f4);
-    background: linear-gradient(#fff, #f5f4f4);
 }
 
 .contacts .contacts-item:last-child {
@@ -314,16 +308,27 @@ body {
     background: -moz-linear-gradient(#fbfbfb, #eee5d0);
     background: linear-gradient(#fbfbfb, #eee5d0);
 }
-.contacts .contacts-item:after{
+
+.contacts .contacts-item:after {
     display: inline-block;
     float: left;
     content: '';
     margin-left: 10px;
     width: 18px;
     height: 18px;
-    background: url(../img/sprite/sprite-con.png);
 }
 
+.contacts .contacts-item-mail {
+    background: #eee5d0 url(../images/email.png) 10px 50% no-repeat;
+}
+
+.contacts .contacts-item-phone {
+    background: #eee5d0 url(../images/telephon.png) 10px 50% no-repeat;
+}
+
+.contacts .contacts-item-skype {
+    background: #eee5d0 url(../images/skype.png) 10px 50% no-repeat;
+}
 
 .contacts .contacts-link {
     font-family: 'Open Sans';
@@ -372,6 +377,7 @@ body {
     float: left;
     margin-left: 55px;
     margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 .avatar {
@@ -384,7 +390,10 @@ body {
     -webkit-border-radius: 50% 50%;
     -moz-border-radius: 50% 50%;
     border-radius: 50% 50%;
-    border: 5px solid #3ba8c0;
+    border: 8px solid #fafafa;
+    -webkit-box-shadow: 2px 2px 1px -200px rgba(223, 222, 221, 1);
+    -moz-box-shadow: 2px 2px 1px -200px rgba(223, 222, 221, 1);
+    box-shadow: 2px 2px 1px -200px rgba(223, 222, 221, 1);
     overflow: hidden;
 }
 
