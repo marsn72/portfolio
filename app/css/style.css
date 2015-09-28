@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
 html {
     height: 100%;
 }
 
 body {
+    width: 1400px;
     height: 100%;
     background: #fff url(../images/bg.jpg) 0 0 no-repeat;
     font: normal 1em open_sanssemibold;
@@ -247,105 +247,97 @@ body {
 
 /*вторая часть левой колонки*/
 
-/*.contacts {
+.contacts {
     float: left;
-}*/
-
-.contacts-header {
-
-    box-shadow: inset rgba(252, 255, 255, .7) 0 0.5px 3px;
-    color: #c99332;
-    text-shadow: 0 0.5px 2px #fff;
-    font-family: 'Open Sans';
-    font-size: 20px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    margin-bottom: 0px;
     width: 250px;
-    height: 43px;
-    background: rgb(244, 204, 126); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(244, 204, 126, 1) 0%, rgba(233, 192, 111, 1) 50%, rgba(222, 180, 97, 1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(244, 204, 126, 1)), color-stop(50%, rgba(233, 192, 111, 1)), color-stop(100%, rgba(222, 180, 97, 1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(244, 204, 126, 1) 0%, rgba(233, 192, 111, 1) 50%, rgba(222, 180, 97, 1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(244, 204, 126, 1) 0%, rgba(233, 192, 111, 1) 50%, rgba(222, 180, 97, 1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(244, 204, 126, 1) 0%, rgba(233, 192, 111, 1) 50%, rgba(222, 180, 97, 1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom, rgba(244, 204, 126, 1) 0%, rgba(233, 192, 111, 1) 50%, rgba(222, 180, 97, 1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4cc7e', endColorstr='#deb461', GradientType=0); /* IE6-9 */
 }
 
-.contacts {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    background: #f1efee;
-    overflow: hidden;
+.contacts-header {
+    display: block;
+    padding: 18px 28px;
+    color: #d0982c;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font: 600 20px 'OpenSans-Semibold';
+    border: 1px solid #caa152;
+    border-radius: 4px 4px 0 0;
+    background: #e1b765; /*background для іе*/
+    background: -webkit-linear-gradient(#f4ce82, #dfb866);
+    background: -o-linear-gradient(#f4ce82, #dfb866);
+    background: -ms-linear-gradient(#f4ce82, #dfb866);
+    background: -moz-linear-gradient(#f4ce82, #dfb866);
+    background: linear-gradient(#f4ce82, #dfb866);
+
 }
 
 .contacts .contacts-list {
+    width: 250px;
     list-style: none;
     margin: 0;
     padding: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .contacts .contacts-item {
-    border-top: 1px solid #c5c5c5;
-    /*    margin: 0 11px;*/
+    display: block;
+    text-align: center;
+    color: #727070;
+    font: 400 14px 'OpenSans-Regular';
+    padding: 12px 2px;
+    border: 1px solid #d6d5d3;
+    -webkit-box-shadow: inset 0 2px 3px 0px rgba(255, 255, 255, 0.4);
+    -moz-box-shadow: inset 0 2px 3px 0px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 2px 3px 0px rgba(255, 255, 255, 0.4);
+    background: #fbfafa; /*background для іе*/
+    background: -webkit-linear-gradient(#fff, #f5f4f4);
+    background: -o-linear-gradient(#fff, #f5f4f4);
+    background: -ms-linear-gradient(#fff, #f5f4f4);
+    background: -moz-linear-gradient(#fff, #f5f4f4);
+    background: linear-gradient(#fff, #f5f4f4);
+}
+
+.contacts .contacts-item:last-child {
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
 }
 
 .contacts .contacts-item:hover {
-    background-image: -moz-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
-    background-image: -webkit-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
-    background-image: -ms-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
-    box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
+    background: #f3e9d5; /*background для іе*/
+    background: -webkit-linear-gradient(#fbfbfb, #eee5d0);
+    background: -o-linear-gradient(#fbfbfb, #eee5d0);
+    background: -ms-linear-gradient(#fbfbfb, #eee5d0);
+    background: -moz-linear-gradient(#fbfbfb, #eee5d0);
+    background: linear-gradient(#fbfbfb, #eee5d0);
 }
+.contacts .contacts-item:after{
+    display: inline-block;
+    float: left;
+    content: '';
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+    background: url(../img/sprite/sprite-con.png);
+}
+
 
 .contacts .contacts-link {
     font-family: 'Open Sans';
     display: block;
     width: 250px;
-    font-size: 20px;
+    font-size: 14px;
     text-decoration: none;
     color: #727070;
-    margin-left: 0px;
-    padding: 16px 0;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(214, 213, 211);
-    background: #fbfbfb;
-    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.137), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.039);
+
 }
 
 .contacts .contacts-link:hover {
+    text-decoration: underline;
     color: #727070;
 }
 
-/*.contacts .contacts-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.contacts .contacts-link {
-    display: block;
-    text-decoration: none;
-    padding: 6px 0 6px 82px;
-}
-
-.contacts .contacts-text {
-    line-height: 1.3em;
-    font-size: 14px;
-    color: #979493;
-}
-
-.contacts .contacts-item {
-
-}
-
-.contacts-item .contacts-item-mail{
-    border: 1px solid #000;
-    background: url("../images/email.png") no-repeat;
-}*/
 /*конец левой колонки*/
 
 /*блок информации*/
@@ -417,7 +409,23 @@ body {
 
 .aboutbox-list > .icon-work:first-child {
     margin-bottom: 65px;
-    border-bottom: ;
+    border-bottom: 2px solid #f7f7f7;
+}
+
+.aboutbox-item.icon-college {
+    list-style: none;
+    padding: 0 0 0px 45px;
+    margin-bottom: 30px;
+    background-image: url(../images/school.png);
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #f7f7f7;
+}
+
+.aboutbox-item.icon-course {
+    list-style: none;
+    padding-left: 45px;
+    background-image: url(../images/graduate.png);
+    background-repeat: no-repeat;
 }
 
 .worksheet-list {
@@ -429,6 +437,7 @@ body {
 .worksheet-info {
     float: left;
     margin-left: 25px;
+    margin-right: 25px;
     max-width: 218px;
     overflow: hidden;
 }
@@ -449,7 +458,7 @@ body {
 }
 
 .skills-list .skills-item {
-    font-family: open_sansregular;
+    font-family: "Open Sans";
     font-size: 14px;
     display: inline-block;
     list-style: none;
