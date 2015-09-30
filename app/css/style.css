@@ -122,10 +122,6 @@ body {
 /* навигация */
 .navigation{
     overflow: hidden;
-    background-image: -moz-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-    box-shadow: 0 2px 1px 0px rgba(9, 9, 9, 0.027), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
     border-radius: 4px;
     margin-bottom: 26px;
 }
@@ -135,7 +131,17 @@ body {
     padding: 0;
 }
 .navigation .navigation-item {
-    margin: 0 11px;
+    width: 100%;
+    background-image: -moz-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    box-shadow: 0 2px 1px 0px rgba(9, 9, 9, 0.027), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
+}
+.navigation .navigation-item:not(.current):hover{
+    background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+    box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
 }
 .navigation .navigation-item:first-child{
     border-top: none;
@@ -560,12 +566,12 @@ body {
 }
 
 .aboutbox-item.icon-work{
-    padding: 0px 76px 0px 76px;
+    padding: 10px 76px 0px 76px;
     background: url(../images/case.png) 9px center no-repeat;
 }
 
 .aboutbox-item.icon-college{
-    padding: 0px 76px 0px 76px;
+    padding: 10px 76px 0px 76px;
     background: url(../images/graduate.png) 9px center no-repeat;
 }
 .aboutbox-item.icon-work:first-child:after, .aboutbox-item.icon-college:after{
@@ -576,7 +582,7 @@ body {
     background: url("../images/bordertop.png");
 }
 .aboutbox-item.icon-course{
-    padding: 0px 0 0px 76px;
+    padding: 10px 0 0px 76px;
     background: url(../images/school.png) 17px center no-repeat;
 }
 /*закончен блок навыки*/
