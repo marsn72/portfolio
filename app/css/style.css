@@ -1,6 +1,7 @@
 html {
     height: 100%;
 }
+
 body {
     height: 100%;
     background: url(../images/bg.jpg) no-repeat;
@@ -12,22 +13,25 @@ body {
 }
 
 /*прибиваем футер*/
-.wrapper{
+.wrapper {
     position: relative;
     min-height: 100%;
     min-width: 970px;
-    height: auto!important;
+    height: auto !important;
 }
+
 .wrapper:after {
     content: "";
     height: 80px;
     display: block;
 }
-.page-footer{
+
+.page-footer {
     min-width: 970px;
     height: 80px;
     margin-top: -80px;
 }
+
 /* конец прибивки футера*/
 
 /* шапка */
@@ -38,44 +42,49 @@ body {
     margin: 0 auto;
     position: relative;
 }
+
 .page-header {
-    height: 119px;
+    height: 90px;
     background: #eff3f7 url('../images/bg-header.png');
     position: relative;
     margin-bottom: 39px;
     width: 100%;
 }
-.page-header:after{
+
+.page-header:after {
     content: '';
     display: block;
     height: 7px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.039);
 }
-.page-header .header-logo-link{
+
+.page-header .header-logo-link {
     position: absolute;
-    top: 39px;
-    left: 0;
+    top: 12px;
+    left: 35px;
 }
-.page-header .header-logo-text{
-    position:absolute;
-    left:-9999px
-}
-.page-header .social{
+
+.page-header .header-logo-text {
     position: absolute;
-    right: 0;
-    top: 36px;
+    left: -9999px
 }
+
+.page-header .social {
+    position: absolute;
+    right: 0px;
+    top: 29px;
+}
+
 /* шапка */
 
-
-
 /* иконки социальных сетей */
-.social{
+.social {
     margin: 0;
     padding: 0;
     min-width: 260px;
 }
+
 .social .social-item {
     list-style: none;
     display: inline-block;
@@ -83,9 +92,11 @@ body {
     width: 47px;
     margin-left: 19px;
 }
+
 .social .social-item:first-child {
     margin-left: 0;
 }
+
 .social .social-link {
     display: block;
     height: 100%;
@@ -93,10 +104,22 @@ body {
     text-indent: -9999px;
     background: url(../images/iconsheet.png) no-repeat;
 }
-.social .social-link.vk {background-position: -10px -130px }
-.social .social-link.tw {background-position: -126px -10px }
-.social .social-link.fb {background-position: -10px -10px }
-.social .social-link.gt {background-position: -10px -70px }
+
+.social .social-link.vk {
+    background-position: -10px -130px
+}
+
+.social .social-link.tw {
+    background-position: -126px -10px
+}
+
+.social .social-link.fb {
+    background-position: -10px -10px
+}
+
+.social .social-link.gt {
+    background-position: -10px -70px
+}
 
 .social .social-link.fb:hover {
     background-position: -68px -10px;
@@ -114,7 +137,6 @@ body {
     background-position: -68px -130px;
 }
 
-
 /* левая колонка */
 .sidebar {
     width: 250px;
@@ -122,44 +144,48 @@ body {
 }
 
 /* навигация */
-.navigation{
+.navigation {
     overflow: hidden;
     border-radius: 4px;
     margin-bottom: 26px;
 }
+
 .navigation .navigation-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .navigation .navigation-item {
     width: 100%;
-    background-image: -moz-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    background-image: -moz-linear-gradient(90deg, rgb(233, 230, 229) 0%, rgb(251, 249, 249) 94%, rgb(255, 255, 255) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(233, 230, 229) 0%, rgb(251, 249, 249) 94%, rgb(255, 255, 255) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(233, 230, 229) 0%, rgb(251, 249, 249) 94%, rgb(255, 255, 255) 100%);
     box-shadow: 0 2px 1px 0px rgba(9, 9, 9, 0.027), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
 }
-.navigation .navigation-item:not(.current):hover{
-    background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+
+.navigation .navigation-item:not(.current):hover {
+    background-image: -moz-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
     box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
 }
-.navigation .navigation-item:first-child{
+
+.navigation .navigation-item:first-child {
     border-top: none;
 }
 
-.navigation .navigation-item.current{
-    background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+.navigation .navigation-item.current {
+    background-image: -moz-linear-gradient(90deg, rgb(62, 183, 153) 0%, rgb(126, 232, 206) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(62, 183, 153) 0%, rgb(126, 232, 206) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(62, 183, 153) 0%, rgb(126, 232, 206) 100%);
     box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.063), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
     margin: 0;
     border-bottom: none;
     padding-left: 11px;
 }
 
-.navigation .navigation-item.current .navigation-link{
+.navigation .navigation-item.current .navigation-link {
     color: #1e7465;
     font-size: 20px;
 }
@@ -173,16 +199,18 @@ body {
     text-decoration: none;
     color: #727070;
     margin-left: 16px;
-    padding: 20px 0px;
+    padding: 20px 0px 15px 0;
 }
-.navigation .navigation-link:hover{
+
+.navigation .navigation-link:hover {
     color: #727070;
 }
+
 /*  Конец навигации  */
 
 /* Вторая часть левой колонки */
 
-.contacts{
+.contacts {
     border-radius: 4px;
     font-family: 'open_sans', Arial;
     font-weight: bold;
@@ -190,16 +218,15 @@ body {
     overflow: hidden;
 }
 
-.contacts .contacts-header{
-    background-image: -moz-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
-    background-image: -ms-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
+.contacts .contacts-header {
+    background-image: -moz-linear-gradient(90deg, rgb(220, 177, 93) 0%, rgb(244, 204, 126) 90%);
+    background-image: -webkit-linear-gradient(90deg, rgb(220, 177, 93) 0%, rgb(244, 204, 126) 90%);
+    background-image: -ms-linear-gradient(90deg, rgb(220, 177, 93) 0%, rgb(244, 204, 126) 90%);
     box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.067), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.098);
-
 
 }
 
-.contacts .header-inner-text{
+.contacts .header-inner-text {
     font-family: 'open_sans', Arial;
     font-weight: bold;
     font-style: normal;
@@ -211,7 +238,7 @@ body {
     display: block;
 }
 
-.contacts .contacts-list{
+.contacts .contacts-list {
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -221,7 +248,7 @@ body {
     font-size: 14px;
 }
 
-.contacts .contacts-link{
+.contacts .contacts-link {
     display: block;
     text-decoration: none;
     padding: 6px 0px;
@@ -232,29 +259,30 @@ body {
     overflow: hidden;
     width: 150px;
 }
-.contacts .contacts-item-mail:hover, .contacts .contacts-item-phone:hover, .contacts .contacts-item-skype:hover{
+
+.contacts .contacts-item-mail:hover, .contacts .contacts-item-phone:hover, .contacts .contacts-item-skype:hover {
     text-decoration: underline;
     background-color: #f7f0e2;
 }
 
-.contacts .contacts-item-mail{
-    background: #f8f8f7 url(../images/email.png)  15px -2px no-repeat;
+.contacts .contacts-item-mail {
+    background: #f8f8f7 url(../images/email.png) 15px -2px no-repeat;
     border-style: solid;
     border-width: 1px;
     border-color: #d6d5d3;
     box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.137), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.039);
 }
 
-.contacts .contacts-item-phone{
-    background: #f8f8f7 url(../images/telephon.png)  19px -2px no-repeat;
+.contacts .contacts-item-phone {
+    background: #f8f8f7 url(../images/telephon.png) 19px -2px no-repeat;
     border-style: solid;
     border-width: 1px;
     border-color: #d6d5d3;
     box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.137), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.039);
 }
 
-.contacts .contacts-item-skype{
-    background: #f8f8f7 url(../images/skype.png) 20px -3px  no-repeat;
+.contacts .contacts-item-skype {
+    background: #f8f8f7 url(../images/skype.png) 20px -3px no-repeat;
     border-style: solid;
     border-width: 1px;
     border-color: #d6d5d3;
@@ -263,43 +291,45 @@ body {
     -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
 }
+
 /* Конец левой колонки*/
 
-
 /* Изменяемый контент */
-.variable-content{
+.variable-content {
     width: 650px;
     float: right;
 }
 
-
 /* Футер */
-.page-footer:before{
+.page-footer:before {
     content: '';
     display: block;
     height: 1px;
     background-color: #54646e;
 }
-.page-footer{
-    background: rgb(255,255,255); /* Old browsers */
+
+.page-footer {
+    background: rgb(255, 255, 255); /* Old browsers */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMGYwZjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(240,240,240,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-8 */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(240, 240, 240, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=0); /* IE6-8 */
     font-family: 'open_sans', Arial;
     font-weight: bold;
     font-style: normal;
     color: #9c9c9c;
 }
+
 .page-footer .container {
     padding-top: 23px;
     position: relative;
 }
-.page-footer .copyright{
+
+.page-footer .copyright {
     margin: 0 180px;
     padding-top: 7px;
     text-align: center;
@@ -309,7 +339,7 @@ body {
     font-style: normal;
 }
 
-.page-footer .lock{
+.page-footer .lock {
     position: absolute;
     top: 26px;
     left: 20px;
@@ -329,24 +359,27 @@ body {
     padding-left: 24px;
 }
 
-.lock .lock-inner:hover{
+.lock .lock-inner:hover {
     text-decoration: underline;
     background: url(../images/unlocked.png) no-repeat;
 }
-/* Футеру конец */
 
+/* Футеру конец */
 
 /* контейнер */
 .container {
     width: 960px;
     margin: 0 auto;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
+
 .pull-left {
     float: left;
 }
+
 .pull-right {
     float: right;
 }
@@ -357,113 +390,125 @@ body {
     content: " ";
     display: table;
 }
+
 .container:after, .clearfix:after {
     clear: both;
 }
+
 /* clearfix end */
 
 /* общие классы */
-.aboutbox{
+.aboutbox {
     background: #f5f3f2;
     border-radius: 4px;
     margin-bottom: 26px;
 }
-.aboutbox .aboutbox-header{
+
+.aboutbox .aboutbox-header {
     font-family: 'open_sans', Arial;
     font-size: 24px;
     font-weight: normal;
     color: #eeedec;
-    background-image: -moz-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+    background-image: -moz-linear-gradient(90deg, rgb(123, 120, 120) 0%, rgb(169, 168, 168) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(123, 120, 120) 0%, rgb(169, 168, 168) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(123, 120, 120) 0%, rgb(169, 168, 168) 100%);
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
     border-bottom: 1px solid #636363;
     margin: 0 0 23px 0;
     padding: 13px 23px;
     border-radius: 4px 4px 0 0;
 }
-.aboutbox-body{
+
+.aboutbox-body {
     padding-bottom: 40px;
 }
+
 /* конец общим классам :)*/
 
-
-
 /* аватар */
-.image-wrap{
+.image-wrap {
     float: left;
     margin-left: 55px;
     margin-top: 18px;
 }
-.avatar-box{
+
+.avatar-box {
     width: 142px;
     height: 142px;
     overflow: hidden;
     border: 9px solid #f6f5f4;
     border-radius: 50%;
-    background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(128,128,128) 51%, rgb(255,255,255) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(128,128,128) 51%, rgb(255,255,255) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(128,128,128) 51%, rgb(255,255,255) 100%);
+    background-image: -moz-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(128, 128, 128) 51%, rgb(255, 255, 255) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(128, 128, 128) 51%, rgb(255, 255, 255) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(128, 128, 128) 51%, rgb(255, 255, 255) 100%);
     box-shadow: 0 0 0 1px #dfdedd;
     /*box-shadow: 0 0 0 1px #fff, 0 0 0 1px #888;*/
 
 }
-.avatar{
+
+.avatar {
     width: 100%;
 }
+
 /* конец блока аватар */
 
-
 /* текст профиля */
-.aboutbox .worksheet-wrap{
+.aboutbox .worksheet-wrap {
     float: right;
     width: 400px;
 }
-.worksheet-list{
+
+.worksheet-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.worksheet-info{
+
+.worksheet-info {
     float: left;
     margin-left: 25px;
     max-width: 260px;
 }
-.worksheet-item{
+
+.worksheet-item {
     margin-bottom: 8px;
 }
-.worksheet-list .worksheet-item:nth-child(4){
+
+.worksheet-list .worksheet-item:nth-child(4) {
     margin-bottom: 20px;
 }
+
 .worksheet-what {
     font-family: 'open_sans', Arial;
     font-weight: bold;
     font-size: 14px;
     float: left;
 }
-.worksheet-info{
+
+.worksheet-info {
     font-family: 'open_sans', Arial;
     font-weight: normal;
     font-size: 14px;
     overflow: hidden;
     max-width: 218px;
 }
+
 /* конец текста профиля */
 
-
-
 /* навыки */
-.worksheet-info .skills-list{
+.worksheet-info .skills-list {
     width: 224px;
     padding: 0;
     list-style: none;
 }
-.skills-list .skill-item{
+
+.skills-list .skill-item {
     font-family: "Open Sans", Arial;
     font-size: 14px;
     display: inline-block;
     list-style: none;
 }
+
 .skil-sprite {
     background-image: url(../images/skillsheet.png);
     background-repeat: no-repeat;
@@ -534,57 +579,66 @@ body {
     background-position: -196px -51px;
 }
 
-.aboutbox .aboutbox-list{
+.aboutbox .aboutbox-list {
     list-style: none;
     padding: 0 0 0 50px;
     margin: 0;
 }
-.aboutbox .aboutbox-item{
+
+.aboutbox .aboutbox-item {
     padding: 0 0 0 76px;
     margin-bottom: 20px;
 }
-.aboutbox .aboutbox-item:last-child{
+
+.aboutbox .aboutbox-item:last-child {
     margin-bottom: 0;
 }
-.aboutbox-item.icon-work .where{
+
+.aboutbox-item.icon-work .where {
     font-family: 'open_sans', Arial;
     font-weight: 600;
     font-size: 14px;
 }
-.aboutbox-item.icon-work .period{
+
+.aboutbox-item.icon-work .period {
     font-family: 'open_sans', Arial;
     font-weight: normal;
     font-size: 14px;
 }
-.aboutbox-item.icon-college .where, .aboutbox-item.icon-course .where{
+
+.aboutbox-item.icon-college .where, .aboutbox-item.icon-course .where {
     font-family: 'open_sans', Arial;
     font-weight: 600;
     font-size: 15px;
 }
-.aboutbox-item.icon-college .period, .aboutbox-item.icon-course .period{
+
+.aboutbox-item.icon-college .period, .aboutbox-item.icon-course .period {
     font-family: 'open_sans', Arial;
     font-weight: normal;
     font-size: 15px;
 }
 
-.aboutbox-item.icon-work{
+.aboutbox-item.icon-work {
     padding: 10px 76px 0px 76px;
     background: url(../images/case.png) 9px center no-repeat;
 }
 
-.aboutbox-item.icon-college{
+.aboutbox-item.icon-college {
     padding: 10px 76px 0px 76px;
     background: url(../images/graduate.png) 9px center no-repeat;
 }
-.aboutbox-item.icon-work:first-child:after, .aboutbox-item.icon-college:after{
+
+.aboutbox-item.icon-work:first-child:after, .aboutbox-item.icon-college:after {
     content: '';
     height: 6px;
     display: block;
     margin-top: 30px;
     background: url("../images/bordertop.png");
 }
-.aboutbox-item.icon-course{
+
+.aboutbox-item.icon-course {
     padding: 10px 0 0px 76px;
     background: url(../images/school.png) 17px center no-repeat;
 }
+
 /*закончен блок навыки*/
