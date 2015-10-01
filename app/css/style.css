@@ -72,7 +72,7 @@ body {
 
 .page-header .social {
     position: absolute;
-    right: -80px;
+    right: -50px;
     top: 29px;
 }
 
@@ -147,7 +147,8 @@ body {
 .navigation {
     overflow: hidden;
     border-radius: 4px;
-    margin-bottom: 26px;
+    margin-bottom: 35px;
+    box-shadow: 0 0 0 1px #d2d2d2;
 }
 
 .navigation .navigation-list {
@@ -199,7 +200,7 @@ body {
     text-decoration: none;
     color: #727070;
     margin-left: 16px;
-    padding: 17px 0px 12px 0;
+    padding: 20px 0px 20px 0;
 }
 
 .navigation .navigation-link:hover {
@@ -233,8 +234,7 @@ body {
     font-size: 20px;
     color: rgb(208, 152, 44);
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
-    padding: 4px 3px 10px;
-    margin: 0px 30px;
+    padding: 14px 0px 14px 19px;
     display: block;
 }
 
@@ -263,6 +263,10 @@ body {
 .contacts .contacts-item-mail:hover, .contacts .contacts-item-phone:hover, .contacts .contacts-item-skype:hover {
     text-decoration: underline;
     background-color: #f7f0e2;
+}
+
+.contacts-item{
+    box-shadow: 0 0 0 1px #d2d2d2;
 }
 
 .contacts .contacts-item-mail {
@@ -376,14 +380,6 @@ body {
     text-align: center;
 }
 
-.pull-left {
-    float: left;
-}
-
-.pull-right {
-    float: right;
-}
-
 /* clearfix */
 .container:before, .clearfix:before,
 .container:after, .clearfix:after {
@@ -402,6 +398,7 @@ body {
     background: #f5f3f2;
     border-radius: 4px;
     margin-bottom: 26px;
+    box-shadow: 0 0 0 1px #d2d2d2;
 }
 
 .aboutbox .aboutbox-header {
@@ -415,7 +412,7 @@ body {
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
     border-bottom: 1px solid #636363;
     margin: 0 0 23px 0;
-    padding: 13px 23px;
+    padding: 13px 0 13px 43px;
     border-radius: 4px 4px 0 0;
 }
 
