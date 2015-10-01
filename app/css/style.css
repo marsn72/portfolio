@@ -182,7 +182,6 @@ body {
     box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.063), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
     margin: 0;
     border-bottom: none;
-    padding-left: 7px;
 }
 
 .navigation .navigation-item.current .navigation-link {
@@ -198,8 +197,7 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: #727070;
-    margin-left: 16px;
-    padding: 20px 0px 20px 0;
+    padding: 17px 0px 17px 29px;
 }
 
 .navigation .navigation-link:hover {
@@ -233,7 +231,7 @@ body {
     font-size: 20px;
     color: rgb(208, 152, 44);
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
-    padding: 14px 0px 14px 19px;
+    padding: 10px 0px 10px 29px;
     display: block;
 }
 
@@ -269,6 +267,7 @@ body {
 }
 
 .contacts .contacts-item-mail {
+    padding: 1px 0;
     background: #f8f8f7 url(../images/email.png) 15px -2px no-repeat;
     border-style: solid;
     border-width: 1px;
@@ -396,7 +395,7 @@ body {
 .aboutbox {
     background: #f5f3f2;
     border-radius: 4px;
-    margin-bottom: 26px;
+    margin-bottom: 36px;
     box-shadow: 0 0 0 1px #d2d2d2;
 }
 
@@ -416,7 +415,7 @@ body {
 }
 
 .aboutbox-body {
-    padding-bottom: 40px;
+    padding-bottom: 32px;
 }
 
 /* конец общим классам :)*/
@@ -424,8 +423,8 @@ body {
 /* аватар */
 .image-wrap {
     float: left;
-    margin-left: 55px;
-    margin-top: 18px;
+    margin-left: 41px;
+    margin-top: 14px;
 }
 
 .avatar-box {
@@ -462,8 +461,11 @@ body {
 
 .worksheet-info {
     float: left;
-    margin-left: 25px;
-    max-width: 260px;
+    max-width: 218px;
+    font-family: 'open_sans', Arial;
+    font-weight: normal;
+    font-size: 14px;
+    overflow: hidden;
 }
 
 .worksheet-item {
@@ -475,18 +477,11 @@ body {
 }
 
 .worksheet-what {
+    margin-right: 25px;
     font-family: 'open_sans', Arial;
     font-weight: bold;
     font-size: 14px;
     float: left;
-}
-
-.worksheet-info {
-    font-family: 'open_sans', Arial;
-    font-weight: normal;
-    font-size: 14px;
-    overflow: hidden;
-    max-width: 218px;
 }
 
 /* конец текста профиля */
@@ -577,17 +572,17 @@ body {
 
 .aboutbox .aboutbox-list {
     list-style: none;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 35px;
     margin: 0;
 }
 
 .aboutbox .aboutbox-item {
     padding: 0 0 0 76px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .aboutbox .aboutbox-item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 .aboutbox-item.icon-work .where {
@@ -597,6 +592,7 @@ body {
 }
 
 .aboutbox-item.icon-work .period {
+    margin-bottom: 30px;
     font-family: 'open_sans', Arial;
     font-weight: normal;
     font-size: 14px;
@@ -609,31 +605,33 @@ body {
 }
 
 .aboutbox-item.icon-college .period, .aboutbox-item.icon-course .period {
+    margin-bottom: 30px;
     font-family: 'open_sans', Arial;
     font-weight: normal;
     font-size: 15px;
 }
 
 .aboutbox-item.icon-work {
-    padding: 10px 76px 0px 76px;
+    padding: 21px 76px 0px 108px;
     background: url(../images/case.png) 9px center no-repeat;
 }
 
 .aboutbox-item.icon-college {
-    padding: 10px 76px 0px 76px;
+    padding: 21px 76px 0px 108px;
     background: url(../images/graduate.png) 9px center no-repeat;
 }
 
 .aboutbox-item.icon-work:first-child:after, .aboutbox-item.icon-college:after {
     content: '';
+    width: 563px;
+    margin: 0 auto;
     height: 6px;
     display: block;
-    margin-top: 30px;
     background: url("../images/bordertop.png");
 }
 
 .aboutbox-item.icon-course {
-    padding: 10px 0 0px 76px;
+    padding: 21px 76px 0px 108px;
     background: url(../images/school.png) 17px center no-repeat;
 }
 
