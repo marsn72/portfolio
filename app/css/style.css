@@ -72,7 +72,7 @@ body {
 
 .page-header .social {
     position: absolute;
-    right: -50px;
+    right: 0px;
     top: 29px;
 }
 
@@ -82,7 +82,6 @@ body {
 .social {
     margin: 0;
     padding: 0;
-    min-width: 260px;
 }
 
 .social .social-item {
