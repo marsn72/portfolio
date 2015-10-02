@@ -193,7 +193,7 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: #727070;
-    padding: 17px 0px 17px 29px;
+    padding: 17px 0px 12px 29px;
 }
 
 .navigation .navigation-link:hover {
@@ -257,7 +257,7 @@ body {
 }
 
 .contacts .contacts-item-mail {
-    padding: 1px 0;
+    padding: 1px 0 1px 14px;
     background: #f8f8f7 url(../images/email.png) 15px -2px no-repeat;
     border-style: solid;
     border-width: 1px;
@@ -266,6 +266,7 @@ body {
 }
 
 .contacts .contacts-item-phone {
+    padding: 3px 0 2px 16px;
     background: #f8f8f7 url(../images/telephon.png) 19px -2px no-repeat;
     border-style: solid;
     border-width: 1px;
@@ -274,6 +275,7 @@ body {
 }
 
 .contacts .contacts-item-skype {
+    padding: 3px 0px 3px 14px;
     background: #f8f8f7 url(../images/skype.png) 20px -3px no-repeat;
     border-style: solid;
     border-width: 1px;
@@ -398,7 +400,7 @@ body {
 }
 
 .aboutbox-body {
-    padding-bottom: 16px;
+    padding: 10px 20px 19px 0;
 }
 
 /* конец общим классам :)*/
@@ -406,8 +408,8 @@ body {
 /* аватар */
 .image-wrap {
     float: left;
-    margin-left: 41px;
-    margin-top: 14px;
+    margin-left: 39px;
+    margin-top: 2px;
 }
 
 .avatar-box {
@@ -451,7 +453,7 @@ body {
 }
 
 .worksheet-item {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .worksheet-list .worksheet-item:nth-child(4) {
