@@ -1,0 +1,98 @@
+.form-head-text {
+    margin: 0;
+    padding: 12px 40px;
+    color: #eeedec;
+    border: 1px solid #636363;
+    border-top: 1px solid #9c9c9c;
+    border-radius: 5px 5px 0 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    background: #827f7f;/*   background для іе*/
+    background: -webkit-linear-gradient(#a9a7a7,#7b7979);
+    background: -moz-linear-gradient(#a9a7a7,#7b7979);
+    background: -o-linear-gradient(#a9a7a7,#7b7979);
+    background: linear-gradient(#a9a7a7,#7b7979);
+    font-family: "open_sansregular";
+    font-size: 24px;
+}
+
+.form-wrap {
+    padding: 36px 0 272px 0;
+}
+
+.form-main {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    color: #727070;
+    font-family: "open_sansregular";
+    font-size: 16px;
+}
+
+.form-text {
+    display: inline-block;
+    width: 190px;
+    margin: 0 0 12px 15px;
+}
+
+.form-text:first-child {
+    margin: 0;
+}
+
+.form-main input[type="text"] {
+    width: 170px;
+}
+
+.form-main input[type="text"],
+.form-main .form-area-text {
+    margin-top: 7px;
+    padding: 10px 8px;
+    color: #c7c6c6;
+    font-size: 12px;
+    border: 1px solid #d6d5d3;
+    border-radius: 3px;
+    background: linear-gradient(#fbfcfd, #f4f3f4);
+}
+
+.form-area {
+    margin: 0 0 10px 0;
+}
+
+.form-area-text {
+    height: 160px;
+    width: 380px;
+    resize: none;
+    margin-bottom: 8px;
+}
+
+.form-kapcha {
+    display: block;
+    width: 400px;
+}
+
+.form-kapcha .form-text {
+    display: block;
+    width: 100%;
+}
+.form-kapcha .form-kapcha-image{
+    float: left;
+}
+.form-kapcha-text{
+    display: inline-block;
+    margin: 0;
+}
+.form-kapcha-text input[type="text"]{
+    margin: 25px 0 20px 14px;
+}
+.btn-submit{
+    display: block;
+    padding: 25px 0;
+}
+.btn-submit .form-btn-submit{
+    font-weight: 600;
+    margin-left: 30px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.form-btn-submit.active{
+    margin-right: 95px;
+}

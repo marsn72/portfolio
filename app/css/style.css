@@ -400,7 +400,7 @@ body {
 }
 
 .aboutbox-body {
-    padding: 10px 20px 19px 0;
+    padding: 0px 20px 19px 0;
 }
 
 /* конец общим классам :)*/
@@ -413,8 +413,8 @@ body {
 }
 
 .avatar-box {
-    width: 142px;
-    height: 142px;
+    width: 133px;
+    height: 133px;
     overflow: hidden;
     border: 9px solid #f6f5f4;
     border-radius: 50%;
@@ -563,6 +563,7 @@ body {
 }
 
 .aboutbox .aboutbox-item:last-child {
+    padding: 17px 76px 1px 108px;
     margin-bottom: 5px;
 }
 
@@ -600,7 +601,7 @@ body {
 
 .aboutbox-item.icon-work:first-child:after, .aboutbox-item.icon-college:after {
     content: '';
-    margin: 0 auto;
+    margin: 23px 0;
     height: 6px;
     display: block;
     background: url("../images/bordertop.png");

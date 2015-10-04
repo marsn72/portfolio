@@ -37,10 +37,9 @@
 
 .gallery-head-text {
     margin: 0;
-    padding: 18px 0 15px 44px;
-    font-family: open_sans, Arial;
+    padding: 13px 0 13px 44px;
+    font-family: "open_sanssemibold";
     font-size: 24px;
-    font-weight: bold;
     color: #eeedec;
 }
 .gallery-list-wrap{
