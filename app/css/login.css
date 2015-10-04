@@ -75,7 +75,6 @@
     margin: 0 auto;
 }
 .login-btn-submit{
-
     padding: 12px 10px;
     text-align: center;
     width: 150px;
@@ -87,7 +86,7 @@
     font-size: 14px;
     color: #467366;
     background: #4fc4a7;/*   background для іе*/
-    text-shadow: 0 1px 1px #000;
+/*    text-shadow: 0 1px 1px #000;*/
     background: -webkit-linear-gradient(#a5e7cb,#74b797);
     background: -ms-linear-gradient(#a5e7cb,#74b797);
     background: -moz-linear-gradient(#a5e7cb,#74b797);
@@ -104,7 +103,7 @@
 }
 .login-btn-submit:active{
     color: #eeedec;
-    text-shadow: 0 1px 1px rgb(0, 0, 0);
+/*    text-shadow: 0 1px 1px rgb(0, 0, 0);*/
     -webkit-box-shadow: inset 0 2px 3px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: inset 0 2px 3px 0px rgba(0,0,0,0.3);
     box-shadow: inset 0 2px 3px 0px rgba(0,0,0,0.3);
