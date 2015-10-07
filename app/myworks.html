@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/works.css">
     <!--header JS-->
-    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="bower/modernizr/modernizr.js"></script>
 </head>
 <body>
 <!--[if lte IE 7]>
@@ -133,7 +133,7 @@
                         <div class="gallery-item-description"><p class="gallery-item-description-text">Landing page
                             по продаже франшизы снежного бизнеса</p></div>
                     </a></li>
-                    <li class="gallery-item"><a href="" class="gallery-item-link">
+                    <li class="gallery-item"><a href="" id="add-new-item" class="gallery-item-link add-project-btn ">
                         <div class="gallery-add-button">Добавить проект</div>
                     </a></li>
                 </ul>
@@ -155,8 +155,42 @@
         </div>
     </div>
 </footer>
+
+<!--popup-->
+
+<!-- Модальное окно добавления проекта -->
+<section class="modal  modal--add-visible  modal--add" id="moda-add-project">
+    <div class="modal__close b-close"></div>
+    <div class="error  error--visible">
+        <div class="error-close"></div>
+      <span class="error-bold">
+        Ошибка!
+      </span>Невозможно добавить проект.
+    </div>
+    <form class="form" action="#" method="post" enctype="multipart/form-data">
+        <label class="form__label" for="project">Название проекта</label>
+        <input class="form__input" type="text" id="project" name="project" placeholder="Введите название">
+        <label class="form__label" for="file">Картинка проекта</label>
+        <label class="form__input-file" for="file">Загрузите изображение</label>
+        <input class="form__file" type="file" id="file" name="file" accept="image/*,image/jpeg,image/png">
+        <label class="form__label" for="url">URL проекта</label>
+        <input class="form__input" type="url" id="url" name="url" placeholder="Добавьте ссылку">
+        <label class="form__label" for="textarea">Описание</label>
+        <textarea class="form__input form__input--textarea" name="textarea" id="textarea"  rows="5" placeholder="Пара слов о вашм проекте"></textarea>
+        <div class="form__btn-wrapper">
+            <input class="form__btn btn b-close" type="submit" value="Добавить" id="add-button">
+        </div>
+    </form>
+</section>
+<!-- END Модальное окно добавления проекта -->
+
+
+<!--end popup-->
+
 <!--vendor JS-->
 <script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/bPopup/jquery.bpopup.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
 <!--JS-->
 <script src="js/script.js"></script>
 </body>

@@ -1,13 +1,15 @@
 html {
     position: relative;
     height: 100%;
+    background: url("../images/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body {
     height: 100%;
-    background: url(../images/bg.jpg) no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
     font-family: "open_sanssemibold";
     font-size: 1em;
     color: #727070;
@@ -42,8 +44,6 @@ body {
 }
 
 .page-header {
-    /*    height: 90px;
-        position: relative;*/
     margin-bottom: 39px;
     padding: 10px 0 5px 8px;
     max-width: 100%;
@@ -51,14 +51,6 @@ body {
     border-bottom: 7px solid #ffffff;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.80);
 }
-
-/*.page-header:after {
-    content: '';
-    display: block;
-    height: 7px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.039);
-}*/
 
 .page-header .header-logo-link {
     float: left;
@@ -70,9 +62,6 @@ body {
 }
 
 .page-header .social {
-    /*    position: absolute;
-        right: 0px;
-        top: 29px;*/
     float: right;
 }
 
@@ -80,12 +69,9 @@ body {
 
 /* иконки социальных сетей */
 .social-wrap {
-    /* padding-top: 17px;*/
 }
 
 .social {
-    /*    margin: 0;
-        padding: 0;*/
     display: block;
     margin-right: 10px;
     list-style: none;
@@ -93,8 +79,6 @@ body {
 
 .social .social-item {
     display: inline-block;
-    /*    height: 38px;
-        width: 38px;*/
     margin-left: 10px;
 }
 
@@ -170,13 +154,6 @@ body {
     box-shadow: 0 2px 1px 0px rgba(9, 9, 9, 0.027), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
 }
 
-/*.navigation .navigation-item:not(.current):hover {
-    background-image: -moz-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
-    background-image: -webkit-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
-    background-image: -ms-linear-gradient(90deg, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
-    box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
-}*/
-
 .navigation .navigation-item:first-child {
     border-top: none;
 }
@@ -195,7 +172,6 @@ body {
     border: 1px solid #2fa185;
     color: #467366;
     background: #4fc4a7; /*   background для іе*/
-    /* text-shadow: 0 1px 1px #000;*/
     background: -webkit-linear-gradient(#a5e7cb, #74b797);
     background: -ms-linear-gradient(#a5e7cb, #74b797);
     background: -moz-linear-gradient(#a5e7cb, #74b797);
@@ -308,8 +284,6 @@ body {
 .contacts .contacts-link {
     display: block;
     text-decoration: none;
-    /*  padding: 6px 0px;
-      margin-left: 83px;*/
     padding: 9px 85px 4px 85px;
     text-align: left;
     color: #848281;
@@ -465,13 +439,15 @@ body {
 .aboutbox {
     float: right;
     width: 650px;
-    margin-bottom: 36px;
-    margin-right: 10px;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.aboutbox:last-child {
+/*.aboutbox:last-child {
     margin-bottom: 50px;
-}
+}*/
 
 .aboutbox .aboutbox-header {
     font-family: 'open_sanssemibold';
@@ -493,7 +469,7 @@ body {
 .aboutbox-body {
     background: #f4f3f2;
     border-radius: 0 0 5px 5px;
-    padding: 30px 42px 20px;
+    padding: 30px 42px 7px;
 }
 
 /* конец общим классам :)*/
@@ -511,7 +487,6 @@ body {
     background-image: -moz-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(128, 128, 128) 51%, rgb(255, 255, 255) 100%);
     background-image: -webkit-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(128, 128, 128) 51%, rgb(255, 255, 255) 100%);
     background-image: -ms-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(128, 128, 128) 51%, rgb(255, 255, 255) 100%);
-    /*box-shadow: 0 0 0 1px #fff, 0 0 0 1px #888;*/
     display: block;
     margin-top: 10px;
     width: 135px;
@@ -538,7 +513,8 @@ body {
     padding: 0;
     margin: 0;
 }
-.worksheet-item{
+
+.worksheet-item {
     display: block;
     padding-top: 10px;
 }
@@ -556,7 +532,8 @@ body {
     font-family: "open_sanssemibold";
     font-size: 14px;
 }
-.worksheet-what.left{
+
+.worksheet-what.left {
     display: inline-block;
     float: left;
     margin-right: 4px;
@@ -652,96 +629,94 @@ body {
     background-position: -196px -51px;
 }
 
-.aboutbox .aboutbox-list {
-    list-style: none;
-    padding: 0 0 0 35px;
+.education {
+    float: right;
+    width: 650px;
+    margin-bottom: 35px;
+    font-family: "open_sansregular", Arial, Helvetica, Garuda, sans-serif;
+    color: #727070;
+    background: #f1f0ef;
+    border-radius: 5px 5px 7px 7px;
+    box-shadow: 0px 3px 6px -3px #d5cf95;
+}
+.education-body{
+
+}
+
+.education .aboutbox-header {
     margin: 0;
+    padding: 15px 0 16px 40px;
+    border: 1px solid;
+    border-top-color: #9c9c9c;
+    border-bottom-color: #646464;
+    border-left-color: #646464;
+    border-right-color: #646464;
+    border-radius: 5px 5px 0 0;
+    background: -webkit-linear-gradient(top, #a9a7a7, #7b7979);
+    background: linear-gradient(to bottom, #a9a7a7, #7b7979);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9a7a7', endColorstr='#7b7979', GradientType=0);
+    box-shadow: inset 0 1px 0 #c3c2c2;
+    font-family: "open_sanssemibold", Arial, Helvetica, Garuda, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: #eeedec;
 }
 
-.aboutbox .aboutbox-item {
-    display: inline-block;
-    width: 100%;
-    padding: 14px 0 25px;
+.aboutbox-list{
+    margin: 0;
+    padding: 22px 50px 20px 43px;
+    border: 1px solid #c1c1c1;
+    border-top: none;
+    border-radius: 0 0 7px 7px;
+}
+.aboutbox-item{
+    position: relative;
+    padding: 22px 13px 27px 94px;
     border-bottom: 1px solid #dbdbda;
+    list-style-type: none;
+    box-shadow: inset 0 -1px #fcfbfb, 0 1px #edeceb, 0 2px #fcfbfb;
 }
-
-.aboutbox .aboutbox-item:last-child {
-/*    padding: 17px 76px 1px 108px;
-    margin-bottom: 5px;*/
-    border: none;
+.aboutbox-item:last-child{
+    border-bottom: none;
+    box-shadow: none;
 }
 .aboutbox-item:before{
-    content: '';
-    display: inline-block;
-    float: left;
-    margin-right: 47px;
-    width: 50px;
-    height: 50px;
-    background: #f7f7f7;
-    background: url(../images/work-sprite.png) no-repeat;
+    position: absolute;
+    content: "";
+    top: 50%;
+    margin-top: -26px;
+    left: -3px;
+    width: 53px;
+    height: 53px;
     border-radius: 50%;
-    box-shadow: inset 2px 2px 1px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.8);
+    background-color: #f7f7f7;
+    background-image: url("../images/spritesheet.png");
+    background-repeat: no-repeat;
+    box-shadow: inset 1px 1px #e0e0e0, inset -1px -1px #fbfbfb;
 }
-
-.aboutbox-item.icon-work .where {
-    margin: 0;
-    padding-left: 94px;
-    padding-top: 10px;
-    color: #727070;
-    font-family: "open_sanssemibold";
+.icon-work:before{
+    background-position: 5px -86px;
+}
+.icon-school:before{
+    background-position: 5px -723px;
+}
+.icon-college:before{
+    background-position: 1px -426px;
+}
+.icon-course:before{
+    background-position: 7px -511px;
+}
+.where, .period{
+    margin-bottom: 2px;
+}
+.where{
+    font-family: "open_sanssemibold", Arial, Helvetica, Garuda, sans-serif;
+    font-size: 14px;
+}
+.period{
+    font-family: "open_sansregular";
     font-size: 14px;
 }
 
-.aboutbox-item.icon-work .period {
-    font-family: 'open_sansregular';
-    font-size: 14px;
-    display: block;
-    padding-left: 100px;
-    color: #727070;
-}
-
-.aboutbox-item.icon-college .where, .aboutbox-item.icon-course .where {
-    font-family: 'open_sanssemibold';
-    font-size: 15px;
-}
-
-.aboutbox-item.icon-college .period, .aboutbox-item.icon-course .period {
-    font-family: 'open_sansregular';
-    font-size: 15px;
-    display: block;
-    padding-left: 100px;
-    color: #727070;
-}
-.aboutbox-item.icon-college:before {
-    background-position: 1px -56px;
-    margin-right: 45px;
-}
-.aboutbox-item.icon-course :before {
-    background-position: 2px -149px;
-}
-/*.file:before {
-    background-position: 2px -149px;
-}*/
-/*.aboutbox-item.icon-work {
-    padding: 21px 76px 0px 108px;
-}
-
-.aboutbox-item.icon-college {
-    padding: 21px 76px 0px 108px;
-}*/
-
-/*.aboutbox-item.icon-work:first-child:after, .aboutbox-item.icon-college:after {
-    content: '';
-    margin: 23px 0;
-    height: 6px;
-    display: block;
-    background: url("../images/bordertop.png");
-}*/
-
-/*
-.aboutbox-item.icon-course {
-    padding: 21px 76px 0px 108px;
-}
-*/
 
 /*закончен блок навыки*/

@@ -18,7 +18,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <!--header JS-->
-    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="bower/modernizr/modernizr.js"></script>
 </head>
 <body>
 <!--[if lte IE 7]>
@@ -84,7 +84,7 @@
         </aside>
         <!--Правая колонка-->
         <div class="variable-content">
-            <section class="aboutbox">
+            <section class="aboutbox clearfix">
                 <h2 class="aboutbox-header">Основная информация</h2>
 
                 <div class="aboutbox-body clearfix">
@@ -96,10 +96,16 @@
                         <p class="worksheet-what">Меня зовут: <span class="worksheet-info">Мараев Сергей</span></p>
 
                         <p class="worksheet-what">Мой возраст: <span class="worksheet-info">43 года</span></p>
-                        <p class="worksheet-what">Мой город: <span class="worksheet-info">Нижний Новгород, Россия</span></p>
-                        <p class="worksheet-what">Моя специализация: <span class="worksheet-info">WEB разработчик</span></p>
+
+                        <p class="worksheet-what">Мой город: <span class="worksheet-info">Нижний Новгород, Россия</span>
+                        </p>
+
+                        <p class="worksheet-what">Моя специализация: <span class="worksheet-info">WEB разработчик</span>
+                        </p>
+
                         <div class="worksheet-item clearfix">
                             <p class="worksheet-what left">Ключевые навыки:</p>
+
                             <div class="worksheet-info skills">
                                 <ul class="skills-list">
                                     <li class="skills-item"><i class="skil-sprite sprite-html"></i></li>
@@ -118,12 +124,10 @@
             </section>
 
 
-            <section class="aboutbox">
-
+            <section class="education">
                 <h2 class="aboutbox-header">Опыт работы</h2>
 
-                <div class="aboutbox-body">
-
+                <div class="education-body">
                     <ul class="aboutbox-list">
                         <li class="aboutbox-item icon-work">
                             <div class="where">ТПО "ДМС" - начальник отдела внедрения ИС</div>
@@ -135,18 +139,14 @@
                         </li>
                     </ul>
                 </div>
-
             </section>
 
-
-            <section class="aboutbox">
-
+            <section class="education">
                 <h2 class="aboutbox-header">Образование</h2>
 
-                <div class="aboutbox-body">
-
+                <div class="education-body">
                     <ul class="aboutbox-list">
-                        <li class="aboutbox-item icon-college">
+                        <li class="aboutbox-item icon-school">
                             <div class="where">Полное среднее. Общеобразовательная школа № 42</div>
                             <div class="period">Сентябрь 1979 - Май 1989</div>
                         </li>
@@ -160,7 +160,6 @@
                         </li>
                     </ul>
                 </div>
-
             </section>
         </div>
     </div>
