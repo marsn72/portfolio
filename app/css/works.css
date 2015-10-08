@@ -20,7 +20,7 @@
 
 .gallery-head {
     width: 100%;
-/*    border-radius: 14px 14px 0 0;*/
+    /*    border-radius: 14px 14px 0 0;*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9c9c9c+0,c3c2c2+2,a9a7a7+4,7b7979+98,636363+100 */
     background: rgb(156, 156, 156); /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -42,7 +42,8 @@
     font-size: 24px;
     color: #eeedec;
 }
-.gallery-list-wrap{
+
+.gallery-list-wrap {
     width: 100%;
     margin: 0 auto;
 }
@@ -53,7 +54,7 @@
     background: #f1f0ef;
 }
 
-.gallery-item-link{
+.gallery-item-link {
     text-decoration: none;
     font-family: open_sanssemibold;
     font-size: 13px;
@@ -71,26 +72,56 @@
     -moz-border-radius: 6px;
     border-radius: 6px;
 }
-.gallery-item .gallery-item-head{
+
+.gallery-item .gallery-item-head {
     text-align: center;
     background: #f2f2f2;
     padding: 9px 0 9px 0px;
     border: 1px solid #d1d1d1;
 }
-.gallery-item-image{
+
+.gallery-item-image {
+    position: relative;
     overflow: hidden;
-    height: 119px;
+    height: 116px;
 }
-.gallery-item .gallery-item-description{
+
+.gallery-item-image:hover img {
+    opacity: 0.2;
+    background: #777;
+}
+
+.gallery-item-image:hover .read-more {
+    display: block;
+    background: #aaaaaa;
+}
+
+.read-more {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 18px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: "open_sanssemibold";
+    font-size: 19px;
+    color: white;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    z-index: 100;
+}
+
+.gallery-item .gallery-item-description {
     background: #ffffff;
     -webkit-border-radius: 0 0 6px 6px;
     -moz-border-radius: 0 0 6px 6px;
     border-radius: 0 0 6px 6px;
-    -webkit-box-shadow:  0 12px 12px #e6e5e4;
+    -webkit-box-shadow: 0 12px 12px #e6e5e4;
     -moz-box-shadow: 0 12px 12px #e6e5e4;
-    box-shadow:  0 2px 12px #e6e5e4;
+    box-shadow: 0 2px 12px #e6e5e4;
 }
-.gallery-item .gallery-item-description .gallery-item-description-text{
+
+.gallery-item .gallery-item-description .gallery-item-description-text {
     margin: 0;
     padding: 8px 6px 8px 6px;
     text-align: center;
@@ -98,7 +129,8 @@
     font-size: 12px;
     color: #959393;
 }
-.gallery-add-button{
+
+.gallery-add-button {
     height: 43px;
     text-align: center;
     padding-top: 93px;
@@ -112,10 +144,12 @@
     color: #727070;
     text-shadow: 0 1px 1px #e7e6e6;
 }
-.gallery-add-button:hover{
+
+.gallery-add-button:hover {
     background-color: rgb(191, 191, 191);
     box-shadow: 0.5px 1px 0px 0px rgba(255, 255, 255, 0.392), inset 1px 1px 0px 0px rgba(199, 199, 199, 0.294);
 }
+
 /*popup add-new-project*/
 
 /*end popup*/
@@ -124,20 +158,27 @@
 
 .modal {
     display: block;
+    position: fixed;
+    top: 30%;
+    left: 40%;
     width: 363px;
     padding: 27px 21px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 6px;
-    background: #f2f1f0; }
+    background: #f2f1f0;
+}
+
 .modal__close {
     position: absolute;
     top: 7px;
     right: 7px;
     width: 13px;
     height: 13px;
-    background: url("../img/spritesheet.png") no-repeat -49px -579px;
-    cursor: pointer; }
+    background: url("../images/spritesheet.png") no-repeat -49px -579px;
+    cursor: pointer;
+}
+
 .modal--add:before {
     position: absolute;
     content: "Добавление контента";
@@ -145,7 +186,9 @@
     left: 22px;
     font-family: "open_sanslight", Arial, Helvetica, Garuda, sans-serif;
     font-size: 12px;
-    color: #f8f7f6; }
+    color: #f8f7f6;
+}
+
 .modal--login:before {
     position: absolute;
     content: "Авторизируйтесь";
@@ -153,4 +196,5 @@
     left: 22px;
     font-family: "open_sanslight", Arial, Helvetica, Garuda, sans-serif;
     font-size: 12px;
-    color: #727070; }
+    color: #727070;
+}
