@@ -13,7 +13,6 @@ var myModal = (function(){
 
 })();
 
-myModal.init()
 
 // Объявление модуля
 var modalWindow = (function () {
