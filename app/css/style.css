@@ -44,6 +44,7 @@ body {
 }
 
 .page-header {
+    margin-bottom: 33px;
     padding: 10px 0 5px 8px;
     max-width: 100%;
     background: #eff3f7 url('../images/bg-header.png');
@@ -317,27 +318,24 @@ body {
 .contacts .contacts-item-mail {
     padding: 1px 0 1px 14px;
     background: #f8f8f7 url(../images/email.png) 15px -2px no-repeat;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #d6d5d3;
-    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.137), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.039);
+    border: 1px solid #d6d5d3;
+    border-top: 0;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.137), inset 0 2px 2px 0 rgba(114, 112, 112, 0.039);
 }
 
 .contacts .contacts-item-phone {
+    margin-top: -1px;
     padding: 3px 0 2px 16px;
     background: #f8f8f7 url(../images/telephon.png) 19px -2px no-repeat;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #d6d5d3;
-    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.137), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.039);
+    border: 1px solid #d6d5d3;
+    box-shadow: 0 1px 0px 0px rgba(255, 255, 255, 0.137), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.039);
 }
 
 .contacts .contacts-item-skype {
+    margin-top: -1px;
     padding: 3px 0px 3px 14px;
     background: #f8f8f7 url(../images/skype.png) 20px -3px no-repeat;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #d6d5d3;
+    border: 1px solid #d6d5d3;
     box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.137), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.039);
     -webkit-border-radius: 0 0 4px 4px;
     -moz-border-radius: 0 0 4px 4px;
@@ -416,7 +414,6 @@ body {
 .container {
     width: 960px;
     margin: 0 auto;
-    padding: 33px 0 60px 0;
 }
 
 .text-center {
