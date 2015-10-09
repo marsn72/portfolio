@@ -1,48 +1,56 @@
-/*
-$('.add-project-btn').on('click', _showModal);
+var myModal = (function () {
 
-var _showModal = function(){
-    $('.add-project-popup').bPopup({
-        speed: 650,
-        transition: 'slideIn',
-        transitionClose: 'slideBack'
-    });
-}*/
-var myModal = (function(){
-
-
-})();
-
-
-// Объявление модуля
-var modalWindow = (function () {
-
-    // Инициализирует наш модуль
     var init = function () {
-        _setUpListners();
+        _setupListeners();
     };
-
-    // Прослушивает события
-    var _setUpListners = function () {
-        $('#add-new-item').on('click', _showModal);
+    var _setupListeners = function () {
+        $('#add-new-item').on('click', _schowModal);
+        $('#add-new-project').on('submit', _addProject);
     };
-
-    var _showModal = function  () {
-        $('#new-project-popup').bPopup({
-            speed: 1650,
-            transition: 'slideDown',
-            /*onClose: function () {
-                this.find('.form')
-                    .trigger("reset");
-            }*/
+    var _schowModal = function (e) {
+        console.log('Вызов модального окна');
+        e.preventDefault();
+        $('#element_to_pop_up').bPopup({
+            speed: 650,
+            transition: 'slideDown'
         });
-    }
-    // Возвращаем объект (публичные методы)
+    };
+    var _addProject = function (ev) {
+        console.log('добавление проекта');
+        ev.preventDefault();
+        var form = $(this),
+            url = 'addProject.php',
+            data = form.serialize();
+
+        console.log(data);
+
+        $.ajax({
+            type: "POST",                               // метод передачи даннных
+            url: url,                              // файл - обработчик
+            datatype: 'json',
+            data: data                           // присваивание значений передаваемых  переменных
+        })
+            .done(function (ans) {
+                console.log(ans);
+                if(ans.mes === "OK"){
+                    console.log("Все прошло успешно!!!");
+                    form.find('.success-mes').text(ans.text).show();
+                }else{
+                    form.find('.error-mes').text(ans.text).show();
+                }
+                console.log(ans);
+            })
+            .fail(function () {
+                console.log("error");
+            });
+
+
+    };
     return {
         init: init
     };
 
 })();
 
-// Вызов модуля
-modalWindow.init();
+
+myModal.init();
