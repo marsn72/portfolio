@@ -20,7 +20,7 @@ var myModal = (function () {
             speed: 300,
             transition: 'slideOut',
             onClose: function () {
-                console.log(form);
+                form.trigger('reset');
                 form.find('.server-mes').text('').hide();
             }
         });
