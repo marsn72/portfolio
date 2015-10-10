@@ -35,6 +35,7 @@ var myModal = (function () {
         var errorBox = form.find('.error-mes'),
             successBox = form.find('.success-mes');
 
+        if (_serverResponse) {
             _serverResponse.done(function (ans) {
                 console.log(ans.status);
                 if (ans.status === "SUCCES") {
@@ -45,12 +46,14 @@ var myModal = (function () {
                     successBox.hide();
                 }
             });
-
+        }
 
     };
 
     var _ajaxForm = function (form, url) {
-
+        if (!validation.validateForm(form)) {
+            return false;
+        }
         var data = form.serialize();
 
         var result = $.ajax({

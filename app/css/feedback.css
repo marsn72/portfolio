@@ -159,3 +159,8 @@
     background: -o-linear-gradient(#78baa0,#4a7664);
     background: linear-gradient(#78baa0,#4a7664);
 }
+.has-error{
+    border: 1px solid #e0ad9a !important;
+    border-radius: 5px !important;
+    box-shadow: 5px 9px 27px 0px rgba(159, 159, 159, 0.2), inset 3px 5px 6px 0px rgba(255, 255, 255, 0.3) !important;
+}

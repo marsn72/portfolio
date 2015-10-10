@@ -1,0 +1,81 @@
+input, textarea, button{
+    outline: none;
+}
+.input, .textarea{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 12px;
+    width: 100%;
+    padding: 12px 12px;
+}
+.textarea{
+    resize: none;
+}
+.form-group{
+    margin-bottom: 12px;
+}
+.btn{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(72, 203, 272);
+    height: 33px;
+    border: solid #3ba8c0;
+    border-width: 0 0 2px 0;
+    color: #f6f6f6;
+}
+#new-project-popup{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow:
+    0 1px 4px rgba(0, 0, 0, .3),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;    border-radius:5px;
+    display:block;
+    padding: 7px 22px;
+    width: 370px;
+    min-width:310px;
+    min-height: 460px;
+    background: rgb(250,249,248); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(250,249,248,1) 0%, rgba(246,245,244,1) 51%, rgba(240,238,237,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(250,249,248,1)), color-stop(51%,rgba(246,245,244,1)), color-stop(100%,rgba(240,238,237,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(250,249,248,1) 0%,rgba(246,245,244,1) 51%,rgba(240,238,237,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(250,249,248,1) 0%,rgba(246,245,244,1) 51%,rgba(240,238,237,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(250,249,248,1) 0%,rgba(246,245,244,1) 51%,rgba(240,238,237,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(250,249,248,1) 0%,rgba(246,245,244,1) 51%,rgba(240,238,237,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faf9f8', endColorstr='#f0eeed',GradientType=0 ); /* IE6-9 */
+}
+.modal-header .b-close{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+.server-mes{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 12px;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 6px;
+}
+.error-mes{
+    display: none;
+    background: #fad2d1;
+    border-color: #f97e76;
+    color: #f97e76;
+}
+.success-mes{
+    display: none;
+    background-color: #b8e1ce;
+    border-color: #49bb7b;
+    color: #b8e1ce;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
