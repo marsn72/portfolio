@@ -4,7 +4,7 @@ var feedback = (function(){
         _setupListeners();
         };
     var _setupListeners = function () {
-        $('.form-main').on('submit', _submitForm);
+        $('.form-main, #form-main').on('submit', _submitForm);
     };
 
     var _submitForm = function (e) {

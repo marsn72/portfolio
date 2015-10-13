@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/feedback.css">
     <link rel="stylesheet" href="css/login.css">
     <!--header JS-->
-    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="bower/modernizr/modernizr.js"></script>
 </head>
 <body>
 <!--[if lte IE 7]>
@@ -34,15 +34,17 @@
         <h2 class="login-form-header">Авторизируйтесь</h2>
 
         <div class=login-form-main">
-            <form action="#" class="login-form-content">
-                <input type="text" class="login-form-email" placeholder="Введите Email"
-                       qtip-content="Вы не ввели название">
-                <input type="password" class="login-form-pass" placeholder="Введите пароль">
+            <form id="form-main" action="#" class="login-form-content">
+                <input type="email" class="login-form-email" placeholder="Введите Email"
+                       qtip-content="Введите свой E-mail" qtip-position="left" required>
+                <input type="password" class="login-form-pass" qtip-content="Пароль обязателен" qtip-position="left"
+                       placeholder="Введите пароль" required>
 
                 <input class="check-remember" type="checkbox" id="checkbox">
                 <label class="check-remember-text" for="checkbox">
                     Запомнить меня?
                 </label>
+
                 <div class="btn-wrap"><input type='submit' class="login-btn-submit" value="Войти"></div>
 
             </form>
@@ -62,7 +64,11 @@
 </footer>
 <!--vendor JS-->
 <script src="bower/jquery/jquery.js"></script>
+<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
 <!--JS-->
 <script src="js/script.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/feedback.js"></script>
 </body>
 </html>

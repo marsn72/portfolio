@@ -16,7 +16,10 @@ $_SESSION['user'] = [
     'age' => $age,
     'work' => $work
 ];
+$dsn = 'mysql:host=localhost;dbname=test';
+$dbh = new PDO($dsn, 'root');
 
-var_dump($_SESSION['counter']);
+foreach($dbh->query('SELECT * from __users') as $row){
+    print_r($row);
+}
 
-echo "Привет!";

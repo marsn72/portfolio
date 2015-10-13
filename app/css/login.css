@@ -1,3 +1,12 @@
+html{
+/*    position: relative;*/
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    min-width: 970px;
+    height: auto !important;
+}
 .login-form {
     display: block;
     position: absolute;
@@ -6,6 +15,7 @@
     margin-left: -196px;
     margin-top: -155px;
     width: 254px;
+    background: rgb(251, 251, 250);
     background: linear-gradient(rgb(251, 251, 250), rgb(240, 238, 237));
     padding: 38px;
     border-radius: 5px;
