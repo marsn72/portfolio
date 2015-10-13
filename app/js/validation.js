@@ -14,7 +14,8 @@ var validation = (function () {
 
     var _resetForm = function (form) {
         var form = $(this);
-        form.find('input, textarea').trigger('hideTooltip');
+        var xz = form.find('.input,.textarea').trigger('hideTooltip');
+
         form.find('.has-error').removeClass('has-error');
     };
 
@@ -50,7 +51,7 @@ var validation = (function () {
             },
             position: position,
             style: {
-                classes: 'qtip-mystyle qtip-red qtip-rounded qtip-shadow',
+                classes: 'tooltip--inner',
                 tip: {
                     height: 10,
                     width: 16
@@ -60,6 +61,8 @@ var validation = (function () {
     };
 
     var validateForm = function (form) {
+
+        console.log("Мы в модуле валидации");
 
         var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
             valid = true;

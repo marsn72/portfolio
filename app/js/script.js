@@ -1,3 +1,11 @@
+jQuery(document).ready(function(){
+    if (!Modernizr.input.placeholder){
+        $('input, textarea').placeholder();
+        alert('Плейсхолдеры в бой!');
+    }
+});
+
+
 var myModal = (function () {
 
     var init = function () {

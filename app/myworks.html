@@ -166,7 +166,7 @@
 <!--popup-->
 
 <div id="element_to_pop_up">
-    <form method="POST" id="add-new-project" class="form">
+    <form method="POST" action="upload.php" id="add-new-project" class="form" enctype="multipart/form-data">
         <div class="modal__close b-close"></div>
         <div class="server-mes error-mes">
             <span class="bold">Ошибка!</span>
@@ -197,9 +197,10 @@
 <!--end popup-->
 
 <!--vendor JS-->
-<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/jquery/jquery.js"></script>
 <script src="bower/bPopup/jquery.bpopup.js"></script>
 <script src="bower/qtip2/jquery.qtip.js"></script>
+<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
 <!--JS-->
 <script src="js/script.js"></script>
 <script src="js/validation.js"></script>
