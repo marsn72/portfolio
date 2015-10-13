@@ -148,6 +148,7 @@ body {
 
 .navigation .navigation-item {
     width: 100%;
+    background: rgb(251, 249, 249);
     background-image: -moz-linear-gradient(90deg, rgb(233, 230, 229) 0%, rgb(251, 249, 249) 94%, rgb(255, 255, 255) 100%);
     background-image: -webkit-linear-gradient(90deg, rgb(233, 230, 229) 0%, rgb(251, 249, 249) 94%, rgb(255, 255, 255) 100%);
     background-image: -ms-linear-gradient(90deg, rgb(233, 230, 229) 0%, rgb(251, 249, 249) 94%, rgb(255, 255, 255) 100%);
@@ -257,6 +258,7 @@ body {
 }
 
 .contacts .contacts-header {
+    background: rgb(244, 204, 126);
     background-image: -moz-linear-gradient(90deg, rgb(220, 177, 93) 0%, rgb(244, 204, 126) 90%);
     background-image: -webkit-linear-gradient(90deg, rgb(220, 177, 93) 0%, rgb(244, 204, 126) 90%);
     background-image: -ms-linear-gradient(90deg, rgb(220, 177, 93) 0%, rgb(244, 204, 126) 90%);
