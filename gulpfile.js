@@ -5,7 +5,8 @@ gulp.task('server', function () {
     browserSync({
         port: 3000,
         server: {
-            baseDir: 'app'
+            baseDir: 'app',
+            proxy: "localhost/portfolio"
         }
     });
 });

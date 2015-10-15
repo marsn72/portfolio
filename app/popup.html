@@ -35,7 +35,7 @@
             <h4 class="modal-title">Добавление проекта</h4>
         </div>
         <div class="modal-body">
-            <form action="upload.php" role="form" id="add-new-project" class="form">
+            <form class="form" id="add-new-project" action="upload.php" method="post" role="form"  enctype="multipart/form-data">
                 <div class="server-mes error-mes"></div>
                 <div class="server-mess succes-mes"></div>
                 <div class="form-group">
@@ -47,7 +47,7 @@
                     <div id="uploadfile" class="fileupload-wrapper">
                         <span class="label">Картинка проекта</span>
                         <label class="fileupload-lable">
-                            <input type="file" id="fileupload" class="fileupload" name="files[]">
+                            <input type="file" id="fileupload" class="fileupload" name="files[]" value="">
                             <input id="fileurl" type="hidden" name="fileurl">
                         </label>
                         <input  name="filename" id="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение" class="input">

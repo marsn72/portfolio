@@ -1,0 +1,12 @@
+AddDefaultCharset UTF-8
+Options FollowSymLinks
+Options -Indexes
+RewriteEngine on
+RewriteCond %[REQUEST_FILENAME] !^favicon\.ico
+RewriteCond %[REQUEST_FILENAME] !-d
+RewriteCond %[REQUEST_FILENAME] !-f
+RewriteRule ^portfolio/?$ index.php?page=portfolio
+RewriteRule ^contacts/?$ index.php?page=contacts
+RewriteRule ^auth/?$ index.php?page=auth
+RewriteRule ^logout/?$ index.php?page=logout
+RewriteRule ^/?$ index.php?page=index

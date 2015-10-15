@@ -263,7 +263,6 @@ body {
     background-image: -webkit-linear-gradient(90deg, rgb(220, 177, 93) 0%, rgb(244, 204, 126) 90%);
     background-image: -ms-linear-gradient(90deg, rgb(220, 177, 93) 0%, rgb(244, 204, 126) 90%);
     box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.067), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.098);
-
 }
 
 .contacts .header-inner-text {
@@ -274,6 +273,7 @@ body {
     padding: 7px 0 8px 26px;
     display: block;
     border-radius: 5px 5px 0 0;
+    behavior: url(PIE/PIE.htc);
 }
 
 .contacts .contacts-list {
@@ -315,6 +315,7 @@ body {
     -webkit-border-radius: 0 0 5px 5px;
     -moz-border-radius: 0 0 5px 5px;
     border-radius: 0 0 5px 5px;
+    behavior: url(PIE/PIE.htc);
 }
 
 .contacts .contacts-item-mail {
@@ -342,6 +343,7 @@ body {
     -webkit-border-radius: 0 0 4px 4px;
     -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
+    behavior: url(PIE/PIE.htc);
 }
 
 /* Конец левой колонки*/
@@ -492,8 +494,7 @@ body {
     width: 135px;
     height: 135px;
     float: left;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 1)
-
+    box-shadow: 0 0 1px rgba(0, 0, 0, 1);
 }
 
 .avatar {
