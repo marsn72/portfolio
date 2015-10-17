@@ -1,12 +1,17 @@
 AddDefaultCharset UTF-8
-Options FollowSymLinks
+
+Options +FollowSymLinks
 Options -Indexes
+
 RewriteEngine on
+
 RewriteCond %[REQUEST_FILENAME] !^favicon\.ico
 RewriteCond %[REQUEST_FILENAME] !-d
 RewriteCond %[REQUEST_FILENAME] !-f
-RewriteRule ^myworks/?$ route.php?page=myworks
-RewriteRule ^feedback/?$ route.php?page=feedback
-RewriteRule ^login/?$ route.php?page=login
-RewriteRule ^logout/?$ route.php?page=logout
-RewriteRule ^/?$ route.php?page=index
+
+RewriteRule (.*) index.php
+#RewriteRule ^myworks/?$ route.php?page=myworks
+#RewriteRule ^feedback/?$ route.php?page=feedback
+#RewriteRule ^login/?$ route.php?page=login
+#RewriteRule ^logout/?$ route.php?page=logout
+#RewriteRule ^/?$ route.php?page=index

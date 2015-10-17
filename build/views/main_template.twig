@@ -1,0 +1,19 @@
+{% include '_parts/head.twig' %}
+<body>
+<!--[if lte IE 7]>
+<p class="browsehappy">Вы используете<strong>устаревший</strong>браузер.Пожалуйста<a href="http://browsehappy.com">обновите</a>его
+</p>
+<![endif]-->
+<div class="wrapper">
+
+    {% include '_parts/header.twig' %}
+
+    <div class="container clearfix">
+        <!--Левая колонка-->
+        {% include '_parts/left_sidebar.twig' %}
+        <!--Правая колонка-->
+        {% include '_parts/right_sidebar.twig' %}
+    </div>
+</div>
+
+{% include '_parts/footer.twig' %}

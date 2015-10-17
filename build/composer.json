@@ -1,0 +1,22 @@
+{
+  "name": "portfolio/build",
+  "description": "",
+  "authors": [
+    {
+      "name": "Maraev Sergey",
+      "email": "maraev@list.ru"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "./classes"
+    ]
+  },
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "require": {
+    "klein/klein": "dev-master",
+    "twig/twig": "dev-master"
+  }
+}
