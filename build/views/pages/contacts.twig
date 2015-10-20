@@ -1,0 +1,58 @@
+{% extends 'main_template.twig' %}
+{% block topcss %}
+    <!--vendor CSS-->
+    <link rel="stylesheet" href="{{ config.base_url }}app/bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="{{ config.base_url }}app/bower/qtip2/jquery.qtip.css">
+    <!--fonts CSS-->
+    <link rel="stylesheet" href="{{ config.base_url }}app/fonts/opensans/stylesheet.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/style.css">
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/works.css">
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/feedback.css">
+    <!--header JS-->
+    <script src="{{ config.base_url }}app/bower/modernizr/modernizr.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+{% endblock %}
+{% block content %}
+    <div class="gallery-wrap variable-content">
+        <div class="gallery-head">
+            <h2 class="gallery-head-text form-head-text">У вас интересный проект? Напишите мне</h2>
+        </div>
+
+        <div class="form-wrap">
+            <form action="#" class="form-main clearfix">
+                <label class="form-text">Имя
+                    <input type="text" placeholder="Как к Вам обращаться" qtip-position="left" qtip-content="Обязательное поле">
+                </label>
+
+                <label class="form-text">Email
+                    <input type="text" placeholder="Куда мне писать" qtip-position="right" qtip-content="Заполните поле">
+                </label>
+
+                <label class="form-area">Сообщение
+                    <textarea class="form-area-text" placeholder="Кратко в чем суть" qtip-position="left" qtip-content="Заполните поле"></textarea>
+                </label>
+                <div class="form-kapcha">
+                    <div class="g-recaptcha" data-sitekey="{{ config.captcha.public_key }}"></div>
+                </div>
+
+                <div class="btn-submit">
+                    <input type="submit" class="form-btn-submit active" value="Отправить">
+                    <input type="reset" class="form-btn-submit reset" value="Очистить">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+{% endblock %}
+{% block bottomscripts %}
+    <!--vendor JS-->
+    <script src="{{ config.base_url }}app/bower/jquery/jquery.js"></script>
+    <script src="{{ config.base_url }}app/bower/qtip2/jquery.qtip.js"></script>
+    <script src="{{ config.base_url }}app/bower/jquery-placeholder/jquery.placeholder.js"></script>
+    <!--JS-->
+    <script src="{{ config.base_url }}app/js/script.js"></script>
+    <script src="{{ config.base_url }}app/js/validation.js"></script>
+    <script src="{{ config.base_url }}app/js/feedback.js"></script>
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends 'main_template.twig' %}
+{% block topcss %}
+    <!--vendor CSS-->
+    <link rel="stylesheet" href="{{ config.base_url }}app/bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="{{ config.base_url }}app/bower/qtip2/jquery.qtip.css">
+    <!--fonts CSS-->
+    <link rel="stylesheet" href="{{ config.base_url }}app/fonts/opensans/stylesheet.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/style.css">
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/works.css">
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/feedback.css">
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/popup.css">
+    <!--header JS-->
+    <script src="{{ config.base_url }}app/bower/modernizr/modernizr.js"></script>
+{% endblock %}
+{% block content %}
+    <div class="gallery-wrap variable-content">
+        <div class="gallery-head">
+            <h2 class="gallery-head-text">Мои работы</h2>
+        </div>
+        <div class="gallery-list-wrap">
+            <ul class="gallery-list">
+                {% for work in works %}
+                    <li class="gallery-item">
+                        <div class="gallery-item-image">
+                            <a href="http://{{ work.link }}" class="read-more">Подробнее</a>
+                            <img src="{{ config.base_url }}{{ work.image }}" alt="{{ work.title }}" class="gallery-item-image">
+                        </div>
+                        <div class="gallery-item-head"><span class="gallery-item-head-text">{{ work.link }}</span></div>
+                        <div class="gallery-item-description">
+                            <p class="gallery-item-description-text">{{ work.description }}</p>
+                        </div>
+                    </li>
+                {% endfor %}
+
+                <li class="gallery-item"><a href="#" id="add-new-item" class="gallery-item-link add-project-btn ">
+                        <div class="gallery-add-button">Добавить проект</div>
+                    </a></li>
+            </ul>
+        </div>
+
+
+    </div>
+{% endblock %}
+{% block popup %}
+    <div id="element_to_pop_up">
+        <form method="POST" action="upload.php" id="add-new-project" class="form" enctype="multipart/form-data">
+            <div class="modal__close b-close"></div>
+            <div class="server-mes error-mes">
+                <span class="bold">Ошибка!</span>
+                <span class="">Невозможно добавить проект.</span>
+            </div>
+            <div class="server-mes success-mes">
+                <span class="bold">Ура!</span>
+                <span class="">Проект успешно добавлен.</span>
+            </div>
+            <p class="add-text">Название проекта</p>
+            <input class="input" type="text" name="pro-name" placeholder="Введите название"
+                   x-autocompletetype="pro-name"
+                   qtip-position="left" qtip-content="введите название">
+
+            <p class="add-text">Картинка проекта</p>
+            <label for="" class="input file-label" qtip-position="left" qtip-content="изображение">
+                <div class="input-file-name">Загрузите изображение</div>
+                <input class="input-file__element" type="file" name="image" placeholder="Загрузите изображение"
+                       x-autocompletetype="image" qtip-position="left" qtip-content="изображение">
+
+                <div class="button-file-wrapper">
+                    <div class="button-file"></div>
+                </div>
+            </label>
+
+            <p class="add-text">URL проекта</p>
+            <input class="input" type="text" name="url" placeholder="Добавьте ссылку" x-autocompletetype="url"
+                   qtip-position="left" qtip-content="ссылка на проект">
+
+            <p class="add-text">Описание</p>
+        <textarea class="input big" name="about" rows="5" placeholder="Пару слов о Вашем проекте" qtip-position="left"
+                  qtip-content="описание проекта"></textarea>
+            <button class="sub current" type="submit" value="Добавить">Добавить</button>
+        </form>
+    </div>
+{% endblock %}
+{% block bottomscripts %}
+    <!--vendor JS-->
+    <script src="{{ config.base_url }}app/bower/jquery/jquery.js"></script>
+    <script src="{{ config.base_url }}app/bower/qtip2/jquery.qtip.js"></script>
+    <script src="{{ config.base_url }}app/bower/bPopup/jquery.bpopup.js"></script>
+    <script src="{{ config.base_url }}app/bower/jquery-placeholder/jquery.placeholder.js"></script>
+    <!--JS-->
+    <script src="{{ config.base_url }}app/js/script.js"></script>
+    <script src="{{ config.base_url }}app/js/validation.js"></script>
+    <script src="{{ config.base_url }}app/js/feedback.js"></script>
+{% endblock %}

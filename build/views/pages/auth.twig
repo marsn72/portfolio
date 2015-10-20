@@ -1,0 +1,53 @@
+{% extends 'main_template.twig' %}
+
+{% block topcss %}
+    <!--vendor CSS-->
+    <link rel="stylesheet" href="{{ config.base_url }}app/bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="{{ config.base_url }}app/bower/qtip2/jquery.qtip.css">
+    <!--fonts CSS-->
+    <link rel="stylesheet" href="{{ config.base_url }}app/fonts/opensans/stylesheet.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/style.css">
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/works.css">
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/feedback.css">
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/login.css">
+    <!--header JS-->
+    <script src="{{ config.base_url }}app/bower/modernizr/modernizr.js"></script>
+{% endblock %}
+
+{% block authform %}
+    <div class="login-form">
+        <h2 class="login-form-header">Авторизируйтесь</h2>
+
+        <div class=login-form-main">
+            <form id="form-main" action="#" class="login-form-content">
+                <input type="email" class="login-form-email" placeholder="Введите Email"
+                       qtip-content="Введите свой E-mail" qtip-position="left" required>
+                <input type="password" class="login-form-pass" qtip-content="Пароль обязателен" qtip-position="left"
+                       placeholder="Введите пароль" required>
+
+                <input class="check-remember" type="checkbox" id="checkbox">
+                <label class="check-remember-text" for="checkbox">
+                    Запомнить меня?
+                </label>
+
+                <div class="btn-wrap"><input type='submit' class="login-btn-submit" value="Войти"></div>
+
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block bottomscripts %}
+    <!--vendor JS-->
+    <script src="{{ config.base_url }}app/bower/jquery/jquery.js"></script>
+    <script src="{{ config.base_url }}app/bower/qtip2/jquery.qtip.js"></script>
+    <script src="{{ config.base_url }}app/bower/bPopup/jquery.bpopup.js"></script>
+    <script src="{{ config.base_url }}app/bower/jquery-placeholder/jquery.placeholder.js"></script>
+    <!--JS-->
+    <script src="{{ config.base_url }}app/js/script.js"></script>
+    <script src="{{ config.base_url }}app/js/validation.js"></script>
+    <script src="{{ config.base_url }}app/js/feedback.js"></script>
+{% endblock %}
+
+
