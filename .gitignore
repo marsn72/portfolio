@@ -3,4 +3,7 @@
 /.git
 /.idea
 
+/build/vendor
+/build/bower
 /vendor/
+
