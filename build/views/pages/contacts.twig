@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ config.base_url }}app/css/feedback.css">
     <!--header JS-->
     <script src="{{ config.base_url }}app/bower/modernizr/modernizr.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 {% endblock %}
 {% block content %}
     <div class="gallery-wrap variable-content">
@@ -31,14 +32,10 @@
                 <label class="form-area">Сообщение
                     <textarea class="form-area-text" placeholder="Кратко в чем суть" qtip-position="left" qtip-content="Заполните поле"></textarea>
                 </label>
-
                 <div class="form-kapcha">
-                    <p class="form-text">Введите код, указанный на картинке</p>
-                    <img src="{{ config.base_url }}app/images/kapcha.png" alt="kapcha" class="form-kapcha-image">
-
-                    <p class="form-kapcha-text">
-                        <input type="text" placeholder="Введите код" qtip-position="right" qtip-content="Заполните поле">
+                    <div class="g-recaptcha" data-sitekey="{{ config.captcha.public_key }}"></div>
                 </div>
+
                 <div class="btn-submit">
                     <input type="submit" class="form-btn-submit active" value="Отправить">
                     <input type="reset" class="form-btn-submit reset" value="Очистить">
