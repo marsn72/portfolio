@@ -20,53 +20,19 @@
         </div>
         <div class="gallery-list-wrap">
             <ul class="gallery-list">
-                <li class="gallery-item">
-                    <div class="gallery-item-image">
-                        <a href="#" class="read-more">Подробнее</a>
-                        <img src="{{ config.base_url }}app/images/pic1tr.png" alt="http://a-industry.ru" class="gallery-item-image">
-                    </div>
-                    <div class="gallery-item-head"><span class="gallery-item-head-text">a-industry.ru</span>
-                    </div>
-                    <div class="gallery-item-description"><p class="gallery-item-description-text">Корпоративный
-                            и в то же время продающий сайт компании a-industry.</p></div>
-                </li>
-                <li class="gallery-item">
-                    <div class="gallery-item-image">
-                        <a href="#" class="read-more">Подробнее</a>
-                        <img src="{{ config.base_url }}app/images/pic2tr.png" alt="http://домгазбетон.рф" class="gallery-item-image"></div>
-                    <div class="gallery-item-head"><span class="gallery-item-head-text">домгазбетон.рф</span>
-                    </div>
-                    <div class="gallery-item-description"><p class="gallery-item-description-text">Продающая
-                            страница для компании ledenland</p></div>
-                </li>
-                <li class="gallery-item">
-                    <div class="gallery-item-image">
-                        <a href="#" class="read-more">Подробнее</a>
-                        <img src="{{ config.base_url }}app/images/pic3untr.png" alt="http://crmconsulting.biz"></div>
-                    <div class="gallery-item-head"><span class="gallery-item-head-text">crmconsulting.biz</span>
-                    </div>
-                    <div class="gallery-item-description"><p class="gallery-item-description-text">Лендинг
-                            компании «СRM Consulting» специализирующейся на точной настройке Битрикс24 под
-                            бизнес</p></div>
-                </li>
-                <li class="gallery-item">
-                    <div class="gallery-item-image">
-                        <a href="#" class="read-more">Подробнее</a>
-                        <img src="{{ config.base_url }}app/images/pic4untr.png" alt="http;//landingsloft.ru"></div>
-                    <div class="gallery-item-head"><span class="gallery-item-head-text">landingsloft.ru</span>
-                    </div>
-                    <div class="gallery-item-description"><p class="gallery-item-description-text">Сайт по
-                            услугам разработки продающих лэндингов</p></div>
-                </li>
-                <li class="gallery-item">
-                    <div class="gallery-item-image">
-                        <a href="#" class="read-more">Подробнее</a>
-                        <img src="{{ config.base_url }}app/images/pic5untr.png" alt="http://yasnow.biz">
-                    </div>
-                    <div class="gallery-item-head"><span class="gallery-item-head-text">yasnow.biz</span></div>
-                    <div class="gallery-item-description"><p class="gallery-item-description-text">Landing page
-                            по продаже франшизы снежного бизнеса</p></div>
-                </li>
+                {% for work in works %}
+                    <li class="gallery-item">
+                        <div class="gallery-item-image">
+                            <a href="http://{{ work.link }}" class="read-more">Подробнее</a>
+                            <img src="{{ config.base_url }}{{ work.image }}" alt="{{ work.title }}" class="gallery-item-image">
+                        </div>
+                        <div class="gallery-item-head"><span class="gallery-item-head-text">{{ work.link }}</span></div>
+                        <div class="gallery-item-description">
+                            <p class="gallery-item-description-text">{{ work.description }}</p>
+                        </div>
+                    </li>
+                {% endfor %}
+
                 <li class="gallery-item"><a href="#" id="add-new-item" class="gallery-item-link add-project-btn ">
                         <div class="gallery-add-button">Добавить проект</div>
                     </a></li>
@@ -89,7 +55,8 @@
                 <span class="">Проект успешно добавлен.</span>
             </div>
             <p class="add-text">Название проекта</p>
-            <input class="input" type="text" name="pro-name" placeholder="Введите название" x-autocompletetype="pro-name"
+            <input class="input" type="text" name="pro-name" placeholder="Введите название"
+                   x-autocompletetype="pro-name"
                    qtip-position="left" qtip-content="введите название">
 
             <p class="add-text">Картинка проекта</p>

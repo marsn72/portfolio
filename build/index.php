@@ -13,6 +13,16 @@ $router->respond('GET', '/build/portfolio/?', function () use ($templater, $conf
     $data['config'] = $config;
     $data['title'] = 'Страница моих работ';
     $data['current'] = 'portfolio';
+
+    ORM::configure(array(
+        'connection_string' => 'mysql:host='. $config['database']['localhost'] .';dbname='.$config['database']['dbname'],
+        'username' => $config['database']['user'],
+        'password' => $config['database']['password']
+    ));
+
+    $works = ORM::for_table('portfolio')->find_many();
+    $data['works'] = $works;
+
     return $templater->display('pages/portfolio', $data);
 });
 
