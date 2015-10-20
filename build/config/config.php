@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'base_url'=>'http://portfolio/app/'
+    'base_url'=>'http://portfolio/'
 ];

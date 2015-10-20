@@ -9,7 +9,8 @@ RewriteCond %[REQUEST_FILENAME] !^favicon\.ico
 RewriteCond %[REQUEST_FILENAME] !-d
 RewriteCond %[REQUEST_FILENAME] !-f
 
-RewriteRule (.*) index.php
+RewriteRule ^(.*)$ index.php [L,QSA]
+#RewriteRule (.*) index.php
 #RewriteRule ^myworks/?$ route.php?page=myworks
 #RewriteRule ^feedback/?$ route.php?page=feedback
 #RewriteRule ^login/?$ route.php?page=login
